@@ -1,0 +1,386 @@
+.boardContent{
+    width:100%;
+    padding:70px 50px;
+    box-sizing:border-box;
+}
+.contentBox{
+    width:100%;
+}
+.contentBox h1{
+    font-size:30px;
+    margin:0px;
+    padding:0 0 20px 0;
+    font-family:"GongGothicBold";
+    color:#664498;
+    border-bottom:1px solid #664498;
+}
+.contentBox .contentDetail{
+    font-size:18px;
+    font-family:"GongGothicLight";
+    color:#333;
+    margin:20px;
+    padding-bottom:30px;
+    white-space: pre;
+}
+.contentBox .info{
+    padding:20px;
+    display:flex;
+    border-top:1px solid #f5f5f5;
+    align-items: center;
+    position:relative;
+}
+.contentBox .info p{
+    margin:0 20px 0 0;
+    padding:0px;
+    font-family:"GongGothicLight";
+    font-size:15px;
+    color:#333;
+}
+.contentBox .info .buttonGroup{
+    position:absolute;
+    right:20px;
+    width:120px;
+    height:40px;
+    display:flex;
+    justify-content: space-between;
+
+}
+.contentBox .info .buttonGroup button{
+    height:40px;
+    border:none;
+    border-radius:5px;
+    background:#333333;
+    color:#fff;
+    font-family:"GongGothicLight";
+    padding:0 10px;
+    cursor:pointer;
+}
+.contentBox .info .buttonGroup button:first-child{
+    background:#664498;
+}
+.contentBox .info .buttonGroup a button:first-child{
+    background:#69a745;
+}
+.boardComment{
+    width:100%;
+    border-top:1px solid #ebebeb;
+}
+.boardComment .commentBox{
+    width:100%;
+    box-sizing:border-box;
+    padding:20px;
+    background:#f9f5ff;
+    margin:20px 0;
+    position: relative;
+}
+.boardComment p{
+    margin:0px;
+    font-family:"GongGothicLight";
+}
+.boardComment .commentDetail{
+    font-size:15px;
+    color:#333;
+    border-bottom:1px solid #ebebeb;
+    white-space:pre;
+    padding-bottom:20px;
+}
+.boardComment .writeInfo{
+    font-size:13px;
+    color:#333;
+}
+.boardComment .writeInfo span{
+    margin-left:20px;
+}
+.editPopup{
+    width:100%;
+    height:100vh;
+    position:fixed;
+    box-sizing:border-box;
+    z-index: 10;
+    left:0;
+    top:0;
+    background:rgba(0,0,0,.6);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.editInputs{
+    width:1100px;
+    height:600px;
+    background:#fff;
+    position:relative;
+}
+.editInputs .popUpbuttons{
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    height:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:20px;
+}
+.editInputs .popUpbuttons button{
+    border:none;
+    border-radius:5px;
+    font-family:"GongGothicLight";
+    padding:10px 20px;
+    color:#fff;
+    margin:5px;
+}
+.editInputs .popUpbuttons button:first-child{
+    background:#333;
+}
+.editInputs .popUpbuttons button:nth-child(2){
+    background:#69a745;
+}
+.editInputs .popUpbuttons button:last-child{
+    background:#664498;
+}
+.editSubject{
+    padding:20px 50px;
+    margin:0px;
+    font-family:"GongGothicBold";
+    color:#664498;
+    font-size:30px;
+}
+.onEditcontent{
+    width:1000px !important;
+    height:400px;
+    font-family: "GongGothicLight";
+    font-size:15px;
+    color:#333;
+    margin:0 0 0 50px;
+    border:none;
+}
+.passwordCheck{
+    width:800px;
+    height:120px;
+    background:#fff;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius:10px;
+}
+.passwordCheck input{
+    width:200px;
+    height:40px;
+    border:1px solid #ebebeb;
+    background:#f9f9f9;
+    border-radius:5px;
+    box-sizing:border-box;
+    padding-left:10px;
+    margin-right:10px;
+    font-family:"GongGothicLight";
+    font-size:15px;
+}
+.passwordCheck button{
+    height:40px;
+    padding:0 20px;
+    border:none;
+    color:#fff;
+    font-family:"GongGothicLight";
+    font-size:15px;
+    background:#664498;
+    border-radius:5px;
+}
+.passwordCheck button:nth-child(2){
+    background:#69a745;
+    margin-right:10px;
+}
+.writeBox{
+    width:100%;
+    box-sizing:border-box;
+    padding:20px;
+}
+.inputsBox{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "GongGothicLight";
+    color:#333;
+    font-size:15px;
+}
+.inputsBox div{
+    width:100%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom:10px;
+}
+.inputsBox div p{
+    width:80px;
+}
+.inputsBox div input{
+    float:right;
+    height:40px;
+    width:170px;
+    box-sizing: border-box;
+    border:1px solid #ebebeb;
+    border-radius:5px;
+    background:#f9f9f9;
+    font-family: "GongGothicLight";
+    color:#333;
+    padding-left:10px;
+}
+.inputsBox div textarea{
+    width:100%;
+    resize: none;
+    height:120px;
+    border:1px solid #ebebeb;
+    border-radius:5px;
+    font-family: "GongGothicLight";
+    color:#333;
+    padding:10px ;
+    box-sizing: border-box;
+}
+.commentBtn{
+    width:100%;
+    height: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.commentBtn button{
+    height:40px;
+    border:none;
+    font-family: "GongGothicLight";
+    font-size:13px;
+    color:#fff;
+    border-radius:5px;
+    padding:0 10px;
+    margin-top:20px;
+    cursor: pointer;
+}
+.commentBtn button:first-child{
+    background:#69a745;
+}
+.commentBtn button:nth-child(2){
+    background: #664498;
+}
+.commentinfo{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:20px;
+}
+.editcomment{
+    padding:10px;
+    font-size:13px;
+    cursor: pointer;
+    font-family: "GongGothicLight";
+    background:#664498;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+}
+
+/* 모바일 버전 */
+.mobileBoardContent{
+    padding:30px 10px;
+}
+.mobileBoardContent .contentBox h1{
+    font-size:20px;
+}
+.mobileBoardContent .contentBox p{
+    font-size:15px;
+}
+.mobileBoardContent .contentBox .contentDetail{
+    font-size:15px;
+    margin:15px;
+    padding-bottom:30px;
+    white-space: pre-wrap;
+}
+.mobileBoardContent .contentBox .info{
+    padding:15px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.mobileBoardContent .contentBox .info p{
+    font-size:13px;
+    margin:0px;
+}
+.mobileBoardContent .contentBox .info .buttonGroup{
+    position:relative;
+    display:flex;
+    justify-content: space-between;
+    right:0px;
+    margin-top:15px;
+}
+.mobileBoardContent .boardComment .commentBox{
+    padding:15px;
+    margin:15px 0;
+    position: relative;
+}
+.mobileBoardContent .commentDetail{
+    white-space: pre-wrap;
+}
+.mobileBoardContent .commentinfo{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.mobileBoardContent .commentinfo p{
+    display: flex;
+    flex-direction: column;
+}
+.mobileBoardContent .commentinfo p span{
+    margin:0px;
+}
+.mobileBoardContent .editcomment{
+    margin-top:15px;
+}
+.mobileBoardContent .writeBox{
+    padding:15px;
+}
+.mobileBoardContent .inputsBox div{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.mobileBoardContent .inputsBox div input{
+    width:100%;
+    margin:5px 0 15px 0;
+}
+.mobileBoardContent .inputsBox div textarea{
+    margin-top:5px;
+}
+.mobileBoardContent .editPopup{
+    padding-left:50px;
+    height:100%;
+}
+.mobileBoardContent .passwordCheck{
+    width:90%;
+    height:auto;
+    padding:15px;
+    box-sizing: border-box;
+}
+.mobileBoardContent .passwordCheck div{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+.mobileBoardContent .passwordCheck div input{
+    margin:0 0 5px 0;
+    width:100%;
+}
+.mobileBoardContent .passwordCheck div button{
+    margin:0 0 5px 0;
+    width:100%;
+}
+.mobileBoardContent .passwordCheck div button:last-child{
+    margin:0px;
+}
+.mobileBoardContent .editInputs{
+    width:90%;
+    position: relative;
+}
+.mobileBoardContent .editSubject{
+    font-size:20px;
+}
+.mobileBoardContent .onEditcontent{
+    width:100% !important;
+    margin:0px;
+    box-sizing: border-box;
+    padding:15px;
+}

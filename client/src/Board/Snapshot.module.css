@@ -1,0 +1,190 @@
+.Snapshot{
+    position:relative;
+    width:100%;
+    height:100vh;
+    box-sizing: border-box;
+    padding:70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow:hidden;
+    background:#212121;
+}
+.snapBoxshow{
+    width:100%;
+    height:100vh;
+    box-sizing: border-box;
+    overflow-y:scroll;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 3;
+    background:#fff;
+}
+.snapBoxhide{
+    display:none;
+}
+.snapDetail{
+    width:100%;
+    background:#fff;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.3);
+}
+.yearOption{
+    position:relative;
+    z-index: 3;
+    width:100%;
+    height:70px;
+    display:flex;
+    justify-content: center;
+}
+.yearOption ul{
+    display:flex;
+    width:50%;
+    height:70px;
+    justify-content:center;
+}
+.yearOption ul li{
+    padding:0 30px;
+    height:70px;
+    line-height: 70px;
+    background:rgba(0,0,0,.3);
+    cursor:pointer;
+    color:#fff;
+    font-family:"GongGothicLight";
+    font-size:24px;
+    margin:0 1px;
+    transition-duration:0.3s;
+}
+.yearOption ul li:first-child{
+    border-radius:20px 0 0 20px;
+}
+.yearOption ul li:last-child{
+    border-radius:0 20px 20px 0;
+}
+.yearOption ul li.active{
+    font-weight:bold;
+    background:#69a745;
+}
+.yearOption p.subJect{
+    position:absolute;
+    bottom:-50px;
+    margin:0px;
+    color:#fff;
+    font-family: "GongGothicLight";
+    font-size:15px;
+}
+.bannerOption{
+    position:absolute;
+    top:30px;
+    left:50px;
+    z-index: 2;
+}
+.bannerOption > li{
+    writing-mode: vertical-lr;
+    color:#fff;
+    font-family: "GongGothicBold";
+    font-size:20px;
+    letter-spacing: 5px;
+    position:relative;
+    cursor:pointer;
+    width:20px;
+}
+.bannerOption > li > ul{
+    display:none;
+}
+.bannerOption > li > ul.optionShow{
+    position:absolute;
+    top:50px;
+    display:flex;
+    left:0px;
+    background:#fff;
+    padding:10px;
+    border-radius:5px;
+}
+.bannerOption > li > ul > li{
+    writing-mode:horizontal-tb;
+    line-height: 1;
+    color:#333;
+    font-size:15px;
+    letter-spacing: normal;
+    padding:15px 0;
+    text-align: center;
+    font-family: "GongGothicLight";
+}
+.bannerOption > li > ul > li > a{
+    text-decoration: none;
+    color:#333;
+}
+.bannerOption > li > ul > li:nth-child(2){
+    border-top:1px solid #ebebeb;
+}
+.closeSnapBox{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:150px;
+    right:50px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-family: "GongGothicLight";
+    color:#333;
+    font-size:15px;
+    transition-duration:0.3s;
+    transform:scale(1);
+    background:#f5f5f5;
+}
+.closeSnapBox:hover{
+    background:#69a745;
+    color:#fff;
+    transform: scale(1.2);
+}
+.goTopbtn{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:70px;
+    right:50px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-family: "GongGothicLight";
+    color:#333;
+    font-size:15px;
+    transition-duration:0.3s;
+    transform:scale(1);
+    background:#f5f5f5;
+}
+.goTopbtn:hover{
+    background:#664498;
+    color:#fff;
+    transform: scale(1.2);
+}
+
+/* 모바일 버전 */
+.mobileSnapshot{
+    padding:30px 10px;
+}
+.mobileSnapshot .yearOption{
+    height:50px;
+}
+.mobileSnapshot .yearOption ul{
+    width:100%;
+    height:50px;
+    overflow-x: scroll;
+}
+.mobileSnapshot .yearOption ul li{
+    box-sizing: border-box;
+    font-size: 15px;
+    height:50px;
+    line-height: 50px;
+}
+.mobileSnapshot .bannerOption{
+    left:30px;
+}
+.mobileSnapshot .closeSnapBox{
+    right:20px;
+}
+.mobileSnapshot .goTopbtn{
+    right:20px;
+}

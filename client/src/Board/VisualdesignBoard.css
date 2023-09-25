@@ -1,0 +1,9 @@
+.content_images{
+    padding:0 70px;
+    box-sizing: border-box;
+}
+
+/* 모바일 버전 */
+.webdesignContentBox .content_images{
+    padding:0 10px;
+}

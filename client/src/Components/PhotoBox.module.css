@@ -1,0 +1,111 @@
+.photoBox{
+    width:100%;
+    height:100vh;
+    position:relative;
+    background:#212121;
+    box-sizing:border-box;
+}
+.photoBox > ul{
+    width:100%;
+    min-width:1200px;
+    height:100%;
+    box-sizing:border-box;
+    padding:70px 50px;
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+}
+.photoBox > ul > li{
+    width:100%;
+}
+.photoBox ul li img{
+    object-fit:cover;
+    width:100%;
+    height:100%;
+}
+.photoBox ul li.p_main{
+    height:60%;
+    background:#ccc;
+    box-shadow:0 5px 20px 6px rgba(0,0,0,.3);
+}
+.photoBox ul li.p_sub{
+    width:100%;
+    height:35%;
+    position:relative;
+}
+.photoBox ul li.p_sub > ul{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    height:100%;
+    }
+.photoBox ul li.p_medium{
+    width:60%;
+    height:100%;
+    background:#ccc;
+    box-shadow:0 5px 20px 6px rgba(0,0,0,.3);
+    }
+.photoBox ul li.p_small{
+    width:30%;
+    height:100%;
+    background:#ccc;
+    box-shadow:0 5px 20px 6px rgba(0,0,0,.3);
+    }
+.photoBox ul li.p_more_btn{
+    width:5%;
+    height:100%;
+    box-shadow:0 5px 20px 6px rgba(0,0,0,.3);
+    }
+.photoBox ul li.p_more_btn a{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background:#fff;
+    transition-duration:0.5s;
+    color:#333;
+    text-decoration: none;
+    font-family: "GongGothicLight";
+    font-size:15px;
+    }
+.photoBox ul li.p_more_btn a:hover{
+    background:#664498;
+    color:#fff;
+    }
+
+    /* 모바일 버전 */
+    .mobilephotoBox{
+        height:50vh;
+    }
+    .mobilephotoBox > ul{
+        min-width: unset;
+        padding:10px 10px 50px 10px;
+    }
+    .mobilephotoBox ul li.p_main{
+        height:50%;
+    }
+    .mobilephotoBox ul li.p_sub{
+       height:48.5%;
+    }
+    .mobilephotoBox ul li.p_sub > ul{
+        flex-wrap:wrap;
+    }
+    .mobilephotoBox ul li.p_medium{
+        height:70%;
+        width:60%;
+    }
+    .mobilephotoBox ul li.p_small{
+        width:38%;
+        height:70%;
+    }
+    .mobilephotoBox ul li.p_more_btn{
+        width:100%;
+        height:21.5%;
+    }
+    .mobilephotoBox ul li.p_more_btn a{
+        background:#69a745;
+        color:#fff;
+    }

@@ -1,0 +1,158 @@
+.visualDesign{
+    width:100%;
+    height:100vh;
+    min-height:820px;
+    box-sizing:border-box;
+    background:#212121;
+    padding:70px 50px;
+}
+.visualDesign .titleBox{
+    width:10%;
+    height:100%;
+    float:right;
+}
+.visualDesign .titleBox h1{
+    writing-mode: vertical-rl;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin:0px;
+    width:100%;
+    height:100%;
+    font-size:5vw;
+    color:#69a745;
+    font-family:"GongGothicBold";
+}
+.visualDesign ul{
+    width:90%;
+    height:100%;
+    float:left;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.visualDesign ul li{
+    height:46%;
+    transition-duration:0.5s;
+    display:flex;
+    justify-content: center;
+    align-items:flex-end;
+    position:relative;
+    overflow:hidden;
+    box-shadow: 0 5px 20px 6px rgba(0,0,0,.3);
+}
+.visualDesign ul li p{
+    color:#fff;
+    font-family:"GongGothicLight";
+    font-size:18px;
+    position: relative;
+    padding:12px 0;
+    width:100%;
+    z-index: 2;
+    text-align: center;
+}
+.visualDesign ul li p a{
+    text-decoration: none;
+    color:#fff;
+}
+.visualDesign ul li img{
+    position:absolute;
+    top:0px;
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+.visualDesign ul li:first-child,
+.visualDesign ul li:nth-child(2),
+.visualDesign ul li:nth-child(3){
+    width:32%;
+}
+.visualDesign ul li:nth-child(4),
+.visualDesign ul li:nth-child(5){
+    width:44%;
+}
+.visualDesign ul li:last-child{
+    width:7%;
+}
+.visualDesign ul li:last-child a{
+    text-decoration: none;
+    text-align:center;
+    color:#fff;
+    font-family: "GongGothicLight";
+    font-size:15px;
+    background:#69a745;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration:0.5s;
+}
+.visualDesign ul li:last-child a:hover{
+    color:#333;
+    background:#fff;
+}
+.vHover img{
+    transform:scale(1.02);
+    transition:0.5s ease-in-out;
+    filter:grayscale(0);
+    opacity: 1;
+}
+.vClose img{
+    transform:scale(1);
+    transition:0.5s ease-in-out;
+    filter:grayscale(1);
+    opacity: 0.5;
+}
+.vHover p{
+    background:#69a745;
+    transition:0.5s ease-in-out;
+}
+.vClose p{
+    background:#333;
+    transition:0.5s ease-in-out;
+}
+
+/* 모바일 버전 */
+.mobileVisualDesign{
+    padding:50px 10px;
+}
+.mobileVisualDesign ul{
+    width:100%;
+    float:unset;
+    height:90%;
+}
+.mobileVisualDesign ul li{
+    height:24%;
+}
+.mobileVisualDesign ul li:first-child,
+.mobileVisualDesign ul li:nth-child(2),
+.mobileVisualDesign ul li:nth-child(3){
+   width:100%;
+}
+.mobileVisualDesign ul li:nth-child(4),
+.mobileVisualDesign ul li:last-child{
+    width:49%;
+}
+.mobileVisualDesign ul li:last-child a{
+    background:none;
+}
+.mobileVisualDesign ul li p{
+    font-size:15px;
+    padding:10px 0;
+    background:#69a745;
+}
+.mobileVisualDesign ul li img{
+    opacity:1;
+    filter:grayscale(1);
+    opacity: 1;
+    object-position: top;
+}
+.mobileVisualDesign .titleBox{
+    width:100%;
+    height:10%;
+}
+.mobileVisualDesign .titleBox h1{
+    writing-mode: unset;
+    font-size: 24px;
+}

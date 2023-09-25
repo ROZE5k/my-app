@@ -1,0 +1,367 @@
+.stageShow{
+    width: 100%;
+    height: 0px;
+    padding-top: 56.25%;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    background: no-repeat url(../images/special_bg.jpg);
+    background-size: cover;
+    background-position:0px center;
+    background-attachment: fixed;
+}
+.stageHide{
+    width: 100%;
+    height: 0px;
+    padding-top: 56.25%;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    background: no-repeat url(../images/special_bg.jpg);
+    background-size: cover;
+    background-position:0px center;
+    background-attachment: fixed;
+}
+.stageHover{
+    width: 100%;
+    height: 0px;
+    padding-top: 56.25%;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    background: no-repeat url(../images/special_bg.jpg);
+    background-size: cover;
+    background-position: 360px center;
+    background-attachment: fixed;
+    transition:0.6s ease-in-out;
+}
+.stageBack{
+    width: 100%;
+    height: 0px;
+    padding-top: 56.25%;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    background: no-repeat url(../images/special_bg.jpg);
+    background-size: cover;
+    background-position:0px center;
+    background-attachment: fixed;
+    transition:0.3s ease-in-out;
+}
+.stageHide .lay_img_2{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    top:50%;
+    left:0%;
+    transition:0.3s ease-in-out;
+}
+.stageShow .lay_img_2{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    top:0%;
+    left:0%;
+    transition:3s ease-in-out;
+    animation-duration: 3s;
+    animation-name: img_2updown;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes img_2updown {
+    0% {
+      top: 0%;
+    }
+  
+    50% {
+      top:0.2%;
+    }
+    100% {
+        top:0%;
+      }
+  }
+.stageHide .lay_img_3{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    top:70%;
+    left:0%;
+    transition:0.3s ease-in-out;
+}
+.stageShow .lay_img_3{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    top:0%;
+    left:0%;
+    transition:3s ease-in-out;
+    animation-duration: 3s;
+    animation-name: img_3updown;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes img_3updown {
+    0% {
+      top: 0%;
+    }
+  
+    50% {
+      top:1%;
+    }
+    100% {
+        top:0%;
+      }
+  }
+.stageHide .lay_img_4{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    top:70%;
+    left:0%;
+    transition:0.3s ease-in-out;
+}
+.stageShow .lay_img_4{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    top:0%;
+    left:0%;
+    transition:3s ease-in-out;
+    animation-duration: 3s;
+    animation-name: img_4updown;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes img_4updown {
+    0% {
+      top: 0%;
+    }
+  
+    50% {
+      top:0.5%;
+    }
+    100% {
+        top:0%;
+      }
+  }
+.stageHide .lay_img_5{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    top:80%;
+    left:30%;
+    transition:0.3s ease-in-out;
+}
+.stageShow .lay_img_5{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    top:0%;
+    left:-20%;
+    transition:3s ease-in-out;
+    animation-duration: 3s;
+    animation-name: img_5updown;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes img_5updown {
+    0% {
+      top: 0%;
+    }
+  
+    50% {
+      top:1%;
+    }
+    100% {
+        top:0%;
+      }
+  }
+.stageHide .lay_img_6{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    top:90%;
+    left:-50%;
+    transition:0.3s ease-in-out;
+}
+.stageShow .lay_img_6{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    top:0%;
+    left:50%;
+    transition:3s ease-in-out;
+    animation-duration: 3s;
+    animation-name: img_6updown;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes img_6updown {
+    0% {
+      top: 0%;
+    }
+  
+    50% {
+      top:1.5%;
+    }
+    100% {
+        top:0%;
+      }
+  }
+.stageHide .lay_img_7{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    top:100%;
+    left:0%;
+    transition:0.3s ease-in-out;
+}
+.stageShow .lay_img_7{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    top:0%;
+    left:0%;
+    transition:3s ease-in-out;
+    animation-duration: 3s;
+    animation-name: ryupdown;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes ryupdown {
+    0% {
+      top: 0%;
+    }
+  
+    50% {
+      top:2%;
+    }
+    100% {
+        top:0%;
+      }
+  }
+.stageHide .lay_img_8{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    top:120%;
+    left:0%;
+    transition:0.3s ease-in-out;
+}
+.stageShow .lay_img_8{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    top:0%;
+    left:0%;
+    transition:3s ease-in-out;
+    animation-duration: 3s;
+    animation-name: img_8updown;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes img_8updown {
+    0% {
+      top: 0%;
+    }
+  
+    50% {
+      top:2.5%;
+    }
+    100% {
+        top:0%;
+      }
+  }
+.stageHide .lay_img_9{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    top:130%;
+    left:0%;
+    transition:0.3s ease-in-out;
+}
+.stageShow .lay_img_9{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    top:0%;
+    left:0%;
+    transition:3s ease-in-out;
+    animation-duration: 3s;
+    animation-name: img_9updown;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes img_9updown {
+    0% {
+      top: 0%;
+    }
+  
+    50% {
+      top:2.5%;
+    }
+    100% {
+        top:0%;
+      }
+  }
+.stageHide .lay_img_10{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    top:70%;
+    left:80%;
+    transition:0.3s ease-in-out;
+}
+.stageShow .lay_img_10{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    top:0%;
+    left:-40%;
+    transition:3s ease-in-out;
+    animation-duration: 3s;
+    animation-name: img_10updown;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes img_10updown {
+    0% {
+      top: 0%;
+    }
+  
+    50% {
+      top:3%;
+    }
+    100% {
+        top:0%;
+      }
+  }
+
+  /* 모바일 버전 */
+  .mobilestageShow{
+    width:100%;
+    height:100vh;
+    background: no-repeat url(../images/mospecial_bg.jpg);
+    background-size: cover;
+    background-attachment: unset;
+    background-position:center;
+    padding:0;
+  }

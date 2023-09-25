@@ -1,0 +1,18 @@
+.conceptThumbs .swiper-slide{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "GongGothicLight";
+    font-size:13px;
+    background: #f5f5f5;
+    color:#333;
+    box-sizing: border-box;
+    border-right:1px solid #69a745;
+}
+.conceptThumbs .swiper-slide:last-child{
+    border-right:none;
+}
+.conceptThumbs .swiper-slide-thumb-active{
+    background:#69a745;
+    color:#fff;
+}

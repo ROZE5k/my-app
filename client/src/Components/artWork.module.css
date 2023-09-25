@@ -1,0 +1,209 @@
+.artShow{
+    width:100%;
+    height:100vh;
+    background: no-repeat url('../images/aw_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.artHide{
+    width:100%;
+    height:100vh;
+    background: no-repeat url('../images/aw_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.artHover{
+    width:100%;
+    height:100vh;
+    background: no-repeat url('../images/aw_bg.jpg');
+    background-size: cover;
+    background-position: 360px center;
+    background-attachment: fixed;
+    transition:0.6s ease-in-out;
+
+}
+.artBack{
+    width:100%;
+    height:100vh;
+    background: no-repeat url('../images/aw_bg.jpg');
+    background-size: cover;
+    background-position: 0px center;
+    background-attachment: fixed;
+    transition:0.3s ease-in-out;
+
+}
+.artShow .artRight{
+    width:50%;
+    height:100%;
+    float:right;
+    display: flex;
+    box-sizing:border-box;
+    padding:70px 0;
+    flex-direction: column;
+    justify-content: center;
+}
+.artHide .artRight{
+    width:50%;
+    height:100%;
+    float:right;
+    display: flex;
+    box-sizing:border-box;
+    padding:70px 0;
+    flex-direction: column;
+    justify-content: center;
+}
+.artShow .artRight p{
+    font-size:2.5vw;
+    color:#fff;
+    padding:20px;
+    background:#69a745;
+    width:20%;
+    text-align: center;
+    border-radius: 20px;
+    font-family: "GongGothicLight";
+    margin:0 0 20px 0;
+    opacity: 1;
+    transition:0.5s ease-in-out;
+    transition-delay:0.6s;
+}
+.artHide .artRight p{
+    font-size:2.5vw;
+    color:#fff;
+    padding:20px;
+    background:#69a745;
+    width:20%;
+    text-align: center;
+    border-radius: 20px;
+    font-family: "GongGothicLight";
+    margin:0 0 20px 0;
+    opacity: 0;
+    transition:0.5s ease-in-out;
+}
+.artShow .artRight h1{
+    font-size:5vw;
+    font-family: "GongGothicBold";
+    color:#fff;
+    margin:0;
+    opacity: 1;
+    transition:0.5s ease-in-out;
+    transition-delay:0.6s;
+    position:relative;
+}
+.artHide .artRight h1{
+    font-size:5vw;
+    font-family: "GongGothicBold";
+    color:#fff;
+    margin:0;
+    opacity: 0;
+    transition:0.5s ease-in-out;
+    position:relative;
+}
+.artShow .artLine{
+    width:100%;
+    height:3px;
+    background:#69a745;
+    margin:5px 0;
+    transition:0.5s ease-in-out;
+    transition-delay:0.6s;
+}
+.artHide .artLine{
+    width:0%;
+    height:3px;
+    background:#69a745;
+    margin:5px 0;
+    transition:0.5s ease-in-out;
+}
+.artShow .artRight h2{
+    font-size:1.5vw;
+    font-family: "GongGothicBold";
+    color:#fff;
+    margin:10px 0;
+    opacity: 1;
+    transition:0.5s ease-in-out;
+    transition-delay:0.7s;
+    position:relative;
+}
+.artHide .artRight h2{
+    font-size:1.5vw;
+    font-family: "GongGothicBold";
+    color:#fff;
+    margin:10px 0;
+    opacity: 0;
+    transition:0.5s ease-in-out;
+    position:relative;
+}
+.artShow .artRight .artText{
+    width:auto;
+    text-align:left;
+    font-size:0.95vw;
+    font-family: "GongGothicLight";
+    color:#fff;
+    margin:0;
+    opacity: 1;
+    transition:0.5s ease-in-out;
+    transition-delay:0.8s;
+    position:relative;
+    background:none;
+    padding:0;
+}
+.artHide .artRight .artText{
+    width:auto;
+    text-align:left;
+    font-size:0.95vw;
+    font-family: "GongGothicLight";
+    color:#fff;
+    margin:0;
+    opacity: 0;
+    transition:0.5s ease-in-out;
+    position:relative;
+    background:none;
+    padding:0;
+}
+
+/* 모바일 버전 */
+.mobileArt{
+    background: #f5f5f5;
+    height:auto;
+    display: flex;
+}
+.mobileArt .artRight{
+    width:100%;
+    padding:50px 30px;
+    justify-content: flex-start;
+    position:relative;
+}
+.mobileArt .artRight p{
+    font-size:15px;
+    padding:10px;
+    border-radius: 10px;
+}
+.mobileArt .artRight h1{
+    font-size:24px;
+    color:#333;
+}
+.mobileArt .artRight h2{
+    font-size:18px;
+    word-break: keep-all;
+    color:#333;
+}
+.mobileArt .artRight .artText{
+    font-size:13px;
+    word-break: keep-all;
+    color:#333;
+}
+.mobileArt .artLine{
+    height:1px;
+}
+.arrowTop{
+    width:20px;
+    height:20px;
+    background:#f5f5f5;
+    position:absolute;
+    top:-10px;
+    z-index: 2;
+    left:50%;
+    transform:rotate(45deg) translate(-10px);
+    transform-origin: 0;
+}

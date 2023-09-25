@@ -1,0 +1,74 @@
+.RMupload{
+    width:100%;
+    min-height:100vh;
+    box-sizing:border-box;
+    padding:70px 50px;
+}
+.RMupload h1{
+    margin:0px;
+    padding-bottom:30px;
+    border-bottom:1px solid #664498;
+    font-family:"GongGothicLight";
+    color:#333;
+}
+.rmbanner{
+   display:flex;
+   width:100%;
+   height:40px;
+   align-items: center;
+   font-size:15px;
+   font-family:"GongGothicLight";
+   color:#333;
+   margin:20px 0;
+}
+.rmbanner p{
+    width:8%;
+}
+.rmbanner input{
+    width:240px;
+    height:40px;
+    border: 1px solid #ebebeb;
+    padding-left:10px;
+}
+.rmbanner_content{
+    display:flex;
+    font-family:"GongGothicLight";
+    color:#333;
+    font-size:15px;
+}
+.rmbanner_content p{
+    width:8%;
+}
+.rmbanner_content textarea{
+    width:92%;
+    height:400px;
+    resize: none;
+    border:1px solid #ebebeb;
+    padding:10px;
+    box-sizing: border-box;
+    font-family: "GongGothicLight";
+    color:#333;
+}
+.rmbutton{
+    width:100%;
+    height:40px;
+    display:flex;
+    justify-content: center;
+    margin-top:30px;
+}
+.rmbutton button{
+    margin:0 10px;
+    font-family:"GongGothicLight";
+    color:#fff;
+    border:none;
+    font-size:15px;
+    border-radius: 5px;
+    padding:0 20px;
+    cursor: pointer;
+}
+.rmbutton button:first-child{
+    background:#664498;
+}
+.rmbutton button:last-child{
+    background:#69a745;
+}

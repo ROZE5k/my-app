@@ -1,0 +1,266 @@
+ul, li{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+li p{
+    margin:0px;
+    padding:0px;
+}
+.boardMain{
+    width:100%;
+    height:100vh;
+    position:relative;
+}
+.userBoard{
+    width:100%;
+    box-sizing:border-box;
+    padding:70px 50px 20px 50px;
+}
+.userBoard ul{
+    width:100%;
+}
+.userBoard ul.quickboardList{
+    height:400px;
+    overflow-y:scroll;
+}
+.userBoard ul a{
+    text-decoration: none;
+    color:#333
+}
+.userBoard ul a:hover{
+    color:#664498;
+}
+.userBoard h1{
+    font-family: 'GongGothicBold';
+    color:#664498;
+    font-size:30px;
+    width:100%;
+    border-bottom:1px solid #664498;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    margin:0px;
+    display:flex;
+    align-items: center;
+    font-weight:100;
+}
+.userBoard h1 span{
+    font-size:18px;
+    color:#333;
+    font-family:"GongGothicLight";
+    margin-left:10px;
+}
+.userBoard > ul > li{
+    width:100%;
+    border-bottom:1px solid #ebebeb;
+    font-family: "GongGothicLight";
+    color:#333;
+}
+.userBoard > ul > li > ul{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.userBoard > ul > li:first-child{
+    background:#f9f9f9;
+}
+.userBoard > ul > li > ul > li{
+    padding:20px;
+    font-size:15px;
+}
+.userBoard > ul > li > ul > li:first-child{
+    width:5%;
+}
+.userBoard > ul > li > ul > li:nth-child(2){
+    width:45%;
+}
+.userBoard > ul > li > ul > li:nth-child(3){
+    width:25%;
+}
+.userBoard > ul > li > ul > li:last-child{
+    width:25%;
+}
+.writeBoard{
+    width:100%;
+    padding:0 50px 70px 50px;
+    box-sizing:border-box;
+    font-family: 'GongGothicLight';
+    color:#333;
+}
+.writeBoard div{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    align-items:center;
+    margin-top:20px;
+}
+.writeBoard div p{
+    width:8%;
+    margin:0px;
+    text-align: right;
+    padding-right:10px;
+}
+.writeBoard div input{
+    width:25%;
+    height:40px;
+    padding-left:10px;
+    font-family: 'GongGothicLight';
+    border:1px solid #ebebeb;
+    border-radius:10px;
+    background:#f9f9f9;
+}
+.writeBoard div textarea{
+    width:95%;
+    height:120px;
+    border-radius:10px;
+    border:1px solid #ebebeb;
+    padding:10px;
+    font-family:'GongGothicLight';
+    color:#333;
+}
+.writeBoard button{
+    font-family: 'GongGothicBold';
+    font-size:20px;
+    padding:10px 20px;
+    background:#664498;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    margin:0 auto;
+    cursor:pointer;
+}
+ul.pagination{
+    display:flex;
+    width:100%;
+    margin-top:20px;
+    height:40px;
+    align-items: center;
+    justify-content: center;
+    border:none;
+}
+ul.pagination li{
+    width:40px;
+    height:40px;
+    line-height:40px;
+    text-align: center;
+    border:none;
+    background:#f9f9f9;
+    border-radius:20px;
+    margin:0 5px;
+    cursor:pointer;
+}
+ul.pagination li:hover{
+    background:#664498;
+    color:#fff;
+}
+ul.pagination li.pagebtn{
+    background:#69a745;
+    color:#fff;
+}
+
+/* 모바일 버전 */
+
+.mobileBoardMain{
+    height:auto;
+}
+.mobileBoardMain .userBoard{
+    padding:30px 10px;
+}
+.mobileBoardMain .userBoard h1{
+    font-size:20px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.mobileBoardMain .userBoard h1 span{
+    font-size:13px;
+    margin:5px 0 0 0;
+}
+.mobileBoardMain .userBoard ul.quickboardList{
+    height:400px;
+}
+.mobileBoardMain .userBoard > ul > li > ul > li{
+    padding:18px 5px;
+    font-size: 13px;
+}
+.mobileBoardMain .userBoard > ul > li > ul > li:first-child{
+    width:12%;
+}
+.mobileBoardMain .userBoard > ul > li > ul > li:nth-child(2){
+    width:48%;
+}
+.mobileBoardMain .userBoard > ul > li > ul > li:nth-child(3){
+    width:20%;
+}
+.mobileBoardMain .userBoard > ul > li > ul > li:last-child{
+    width:20%;
+}
+.mobileBoardMain li p{
+    width:100%;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+}
+.mobileWriteBoard{
+    width:100%;
+    padding:0 10px 30px 10px;
+    box-sizing:border-box;
+    font-family: 'GongGothicLight';
+    color:#333;
+}
+.mobileWriteBoard div{
+    display:flex;
+    width:100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    margin-top:20px;
+}
+.mobileWriteBoard div p{
+    width:auto;
+    font-size: 13px;
+    margin-bottom:8px;
+    box-sizing: border-box;
+    padding-left:10px;
+}
+.mobileWriteBoard div input{
+    width:100%;
+    height:40px;
+    padding-left:10px;
+    box-sizing: border-box;
+    font-family: 'GongGothicLight';
+    border:1px solid #ebebeb;
+    border-radius:5px;
+    background:#f9f9f9;
+    margin-bottom:15px;
+}
+.mobileWriteBoard div textarea{
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    border-radius: 5px;
+}
+.mobileWriteBoard button{
+    font-size: 15px;
+}
+.mobileBoardMain .pagination li{
+    width:30px;
+    height:30px;
+    line-height:30px;
+    text-align: center;
+    border:none;
+    background:#f9f9f9;
+    border-radius:15px;
+    margin:0 3px;
+    cursor:pointer;
+    font-size: 13px;
+}
+.mobileBoardMain ul.pagination li:hover{
+    background:#664498;
+    color:#fff;
+}
+.mobileBoardMain ul.pagination li.pagebtn{
+    background:#69a745;
+    color:#fff;
+}

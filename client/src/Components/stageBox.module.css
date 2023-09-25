@@ -1,0 +1,231 @@
+.stageBox{
+    width:100%;
+    height:100vh;
+    position:relative;
+    background:#212121;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.box_wrapper{
+    width: 33.33%;
+    height: 100%;
+    border-right: 1px solid #333;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.box_wrapper:last-child{
+    border-right:none;
+}
+.box_wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transform: scale(1);
+    transition-duration: 3s;
+    filter: grayscale(1);
+    top: 0%;
+}
+.box_wrapper.monster_box:hover img{
+    filter:grayscale(0);
+    }
+.box_wrapper.monster_box h1{
+    position:relative;
+    font-size:3vw;
+    color:#fff;
+    font-family:"GongGothicBold";
+    width:100%;
+    height:100%;
+    display:flex;
+    text-align:center;
+    justify-content:center;
+    padding-top:20%;
+    box-sizing:border-box;
+    opacity:0.5;
+    transition-duration:3s;
+}
+.box_wrapper.monster_box img.monster_1{
+    transform:scale(1.02);
+}
+.box_wrapper.monster_box:hover img.monster_1{
+    transform:scale(1);
+    }
+.box_wrapper.monster_box:hover h1{
+    opacity:1;
+    }
+.box_wrapper.monster_box:hover img.monster_2{
+    transform:scale(1.03);
+    }
+.box_wrapper.monster_box:hover img.monster_3{
+    transform:scale(1.05);
+    top:-2%;
+    }
+.box_wrapper.monster_box:hover img.monster_4{
+    transform:scale(1.08);
+    top:-3.5%;
+    }
+.box_wrapper.monster_box a{
+    position:absolute;
+    font-size:1.5vw;
+    color:#fff;
+    font-family:"GongGothicLight";
+    width:40%;
+    left:30%;
+    display:block;
+    text-align:center;
+    bottom:70px;;
+    padding:10px 0;
+    border:1px solid #fff;
+    background:rgba(0,0,0,.6);
+    transition-duration:3s;
+    box-sizing:border-box;
+    opacity:0;
+    text-decoration: none;
+    }
+.box_wrapper.monster_box:hover a{
+    opacity:1;
+    }
+
+/* The Last Romance */
+.box_wrapper.romance_box:hover img{
+    filter:grayscale(0);
+    }
+.box_wrapper.romance_box:hover h1{
+    opacity:1;
+    }
+
+.box_wrapper.romance_box a{
+    position:absolute;
+    font-size:1.5vw;
+    color:#fff;
+    font-family:"GongGothicLight";
+    width:40%;
+    left:30%;
+    display:block;
+    text-align:center;
+    bottom:70px;;
+    padding:10px 0;
+    border:1px solid #fff;
+    background:rgba(0,0,0,.6);
+    transition-duration:3s;
+    box-sizing:border-box;
+    opacity:0;
+    text-decoration: none;
+    }
+.box_wrapper.romance_box:hover a{
+    opacity:1;
+    }    
+
+.box_wrapper.romance_box img.lr_1{
+    transform:scale(1.03);
+}
+.box_wrapper.romance_box:hover img.lr_1{
+        transform:scale(1);
+    }
+.box_wrapper.romance_box img.lr_2{
+        transform:scale(1);
+} 
+.box_wrapper.romance_box:hover img.lr_2{
+        transform:scale(1.01);
+} 
+.box_wrapper.romance_box img.lr_3{
+    transform:scale(1);
+} 
+.box_wrapper.romance_box:hover img.lr_3{
+    transform:scale(1.03);
+} 
+.box_wrapper.romance_box img.lr_4{
+    transform:scale(1);
+    top:0%;
+} 
+.box_wrapper.romance_box:hover img.lr_4{
+    transform:scale(1.06);
+    top:1.5%;
+} 
+.box_wrapper.romance_box h1{
+    position:relative;
+    font-size:3vw;
+    color:#fff;
+    font-family:"GongGothicBold";
+    width:100%;
+    height:100%;
+    display:flex;
+    text-align:center;
+    justify-content:center;
+    padding-top:110%;
+    box-sizing:border-box;
+    opacity:0.5;
+    transition-duration:3s;
+    }
+
+    /* The Pirates */
+.box_wrapper.pirates_box:hover img{
+    filter:grayscale(0);
+    }
+.box_wrapper.pirates_box:hover h1{
+    opacity:1;
+    }
+
+.box_wrapper.pirates_box a{
+    position:absolute;
+    font-size:1.5vw;
+    color:#fff;
+    font-family:"GongGothicLight";
+    width:40%;
+    left:30%;
+    display:block;
+    text-align:center;
+    bottom:70px;;
+    padding:10px 0;
+    border:1px solid #fff;
+    background:rgba(0,0,0,.6);
+    transition-duration:3s;
+    box-sizing:border-box;
+    opacity:0;
+    text-decoration: none;
+    }
+.box_wrapper.pirates_box:hover a{
+    opacity:1;
+    }    
+
+.box_wrapper.pirates_box img.pirates_1{
+    transform:scale(1.03);
+}
+.box_wrapper.pirates_box:hover img.pirates_1{
+        transform:scale(1);
+    }
+.box_wrapper.pirates_box img.pirates_2{
+        transform:scale(1);
+} 
+.box_wrapper.pirates_box:hover img.pirates_2{
+        transform:scale(1.01);
+} 
+.box_wrapper.pirates_box img.pirates_3{
+    transform:scale(1);
+} 
+.box_wrapper.pirates_box:hover img.pirates_3{
+    transform:scale(1.03);
+} 
+.box_wrapper.pirates_box img.pirates_4{
+    transform:scale(1);
+} 
+.box_wrapper.pirates_box:hover img.pirates_4{
+    transform:scale(1.15);
+} 
+.box_wrapper.pirates_box h1{
+    position:relative;
+    font-size:3vw;
+    color:#fff;
+    font-family:"GongGothicBold";
+    width:100%;
+    height:100%;
+    display:flex;
+    text-align:center;
+    justify-content:center;
+    padding-top:70%;
+    box-sizing:border-box;
+    opacity:0.5;
+    transition-duration:3s;
+    }

@@ -1,0 +1,50 @@
+.Wrapper{
+  width:100%;
+  min-width:1200px;
+  position:relative;
+  overflow:hidden;
+}
+.mobileWrapper{
+  width:100%;
+  position:relative;
+  overflow:hidden;
+}
+.rightContents{
+  width:100%;
+  min-height: 100vh;
+  position:relative;
+  box-sizing:border-box;
+  left:0px;
+  padding-left:170px;
+  filter: blur(0px);
+  transition: 0.3s ease-in-out;
+  overflow:hidden;
+}
+.active{
+  width:100%;
+  min-height: 100vh;
+  position:relative;
+  box-sizing:border-box;
+  left:360px;
+  padding-left:170px;
+  filter: blur(5px);
+  transition: 0.6s ease-in-out;
+  overflow:hidden;
+}
+.mobileContents{
+  width:100%;
+  padding-left:50px;
+}
+.mophotobg{
+  width:100%;
+  height:100vh;
+  position:fixed;
+  top:0;
+  background: no-repeat url('images/mopho_bg.jpg');
+  background-size: cover;
+  background-position: 50px center;
+  z-index: -1;
+}
+.openCateWrapper{
+  height:100vh;
+}

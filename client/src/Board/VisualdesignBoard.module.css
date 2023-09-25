@@ -1,0 +1,142 @@
+.vdboardViewBox{
+    width:100%;
+    height:100vh;
+    background:#212121;
+    box-sizing:border-box;
+    padding:70px 120px;
+    overflow-y: scroll;
+}
+.vdlogo{
+    width:240px;
+    height:auto;
+    margin-bottom:30px;
+}
+.boardsubject p, .boardsubject h2{
+    margin:0;
+}
+.boardsubject p{
+    color:#fff;
+    font-size:18px;
+    font-family:"GongGothicLight";
+}
+.boardsubject h2{
+    color:#69a745;
+    font-size:24px;
+    font-weight:100;
+    font-family:"GongGothicMedium";
+    padding-top:10px;
+}
+.vdcontents{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top:30px;
+}
+.vdcontents li{
+    width:32%;
+    height:300px;
+    background:#333;
+    float:left;
+    margin-bottom:30px;
+    box-shadow: 0 5px 15px 5px rgba(0,0,0,.1);
+    box-sizing:border-box;
+    padding:20px 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+.vdcontents li .vdicons{
+    width:40px;
+    height:40px;
+}
+.vdcontents li .vdicons img{
+    width:40px;
+    height:40px;
+}
+.vdcontents li:last-child{
+    background:none;
+    box-shadow: none;
+}
+.vdcontents li h2, .vdcontents li p{
+    margin:0px;
+    color:#fff;
+    word-break: keep-all;
+}
+.vdcontents li h2{
+    font-family:"GongGothicMedium";
+    font-weight:100;
+    font-size:24px;
+    color:#69a745;
+}
+.vdcontents li p{
+    font-family:"GongGothicLight";
+    font-size:18px;
+}
+.vdcontents li p.vdcount{
+    color:#888888;
+    font-size:15px;
+}
+.vdcontents li a{
+    color:#fff;
+    text-decoration: none;
+    font-family:"GongGothicLight";
+    font-size:18px;
+    display:block;
+    width:50px;
+    height:50px;
+    background:#282828;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:3px;
+    right:3px;
+}
+.vdcontents li a:hover{
+    background:#69a745;
+}
+.vdcontents li:last-child img{
+    max-width:90%;
+    height:auto;
+}
+.vdcontents li:last-child{
+    align-items: center;
+}
+
+/* 모바일 버전 */
+.mobilevdboardViewBox{
+    padding:30px 10px;
+}
+.mobilevdboardViewBox .vdlogo{
+    width:60%;
+}
+.mobilevdboardViewBox .vdcontents li{
+    width: 49%;
+    margin-bottom: 2vw;
+    padding:10px;
+    justify-content: space-between;
+}
+.mobilevdboardViewBox .vdcontents li h2{
+    font-size: 15px;
+}
+.mobilevdboardViewBox .vdcontents li .vdicons img{
+    width:30px;
+    height:30px;
+}
+.mobilevdboardViewBox .vdcontents li p{
+    font-size:13px;
+    display: block;
+    height:40%;
+}
+.mobilevdboardViewBox .vdcontents li p.vdcount{
+    height:auto;
+}
+.mobilevdboardViewBox .vdcontents li a{
+    width:40px;
+    height:40px;
+}
+.mobilevdboardViewBox .vdcontents li:last-child{
+    justify-content: center;
+}

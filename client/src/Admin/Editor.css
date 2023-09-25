@@ -1,0 +1,7 @@
+.ck.ck-editor__editable:not(.ck-editor__nested-editable) {
+    height: 600px;
+    overflow-y:scroll;
+}
+.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar, .ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners{
+    background:#f5f5f5;
+}

@@ -1,0 +1,455 @@
+.boardViewBox{
+    width:100%;
+    height:100vh;
+    min-height:820px;
+    box-sizing: border-box;
+    background-color:#121212;
+    display: flex;
+    justify-content:space-between;
+    position:relative;
+}
+.thumbBox{
+    width:25%;
+    height:100%;
+    overflow-y:scroll;
+    box-sizing: border-box;
+    padding:70px 50px 70px 50px;
+    float:left;
+}
+.thumbBox::-webkit-scrollbar{width:5px;}
+.thumbBox::-webkit-scrollbar-thumb{
+    background-color:#69a745;
+    background-clip:padding-box;
+    border:1px solid transparent;
+}
+.thumbBox::-webkit-scrollbar-track{
+    background-color:#333;
+}
+.boardViewBox .thumbBox .thumbList{
+    width:100%;
+    height:250px;
+    margin-bottom:30px;
+    position:relative;
+    display:inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    border-radius:8px;
+    box-shadow: 0 5px 15px 5px rgba(0,0,0,.3);
+    box-sizing: border-box;
+}
+.thumbBox .thumbList:last-child{
+    margin-bottom:0px;
+}
+.thumbBox .thumbList .listThumb{
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+.thumbBox .thumbList img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+.thumbBox .thumbList:hover img{
+    transform: scale(1);
+}
+.thumbBox .thumbList h2{
+    color:#333;
+    position:relative;
+    z-index: 2;
+    padding:10px 0;
+    margin:0px;
+    font-size:20px;
+    font-family:"GongGothicLight";
+    background:#fff;
+    width:100%;
+    text-align: center;
+    font-weight: 100;
+    cursor: pointer;
+}
+.thumbBox .thumbList h2:hover{
+    background:#69a745;
+    color:#fff;
+}
+.contentBox{
+    width:70%;
+    height:100%;
+    box-sizing:border-box;
+    padding:0px;
+    background:#fff;
+    overflow-y: scroll;
+}
+.contentBox::-webkit-scrollbar{width:5px;}
+.contentBox::-webkit-scrollbar-thumb{
+    background-color:#69a745;
+    background-clip:padding-box;
+    border:1px solid transparent;
+}
+.contentBox::-webkit-scrollbar-track{
+    background-color:#333;
+}
+.contentBox img{
+    width:100%;
+    height:auto;
+    vertical-align: top;
+}
+.contentThumb{
+    width:100%;
+    height:600px;
+}
+.contentThumb img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+.contentDetail{
+    width:100%;
+    box-sizing:border-box;
+    padding:0 70px 35px 70px;
+    text-align: center;
+}
+.contentDetail h2{
+    font-weight:100;
+    font-family:"GongGothicLight";
+    color:#69a745;
+    text-align:center;
+    font-size:35px;
+    margin:0px;
+    padding:50px 0;
+}
+.contentDetail p{
+    margin:0px;
+}
+.boardBigtitle{
+    width:5%;
+    height:100%;
+    float:right;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #69a745;;
+}
+.boardBigtitle h1{
+    writing-mode: vertical-rl;
+    margin:0px;
+    font-weight: 100;
+    font-family: "GongGothicBold";
+    color:#fff;
+    font-size:30px;
+}
+.contentDetail figcaption{
+    font-size:15px;
+    color:#333;
+    font-family:"GongGothicLight";
+    background:#f9f9f9;
+    text-align: center;
+    padding:10px 0
+}
+.contentDetail figcaption p{
+    padding:20px 0px;
+}
+.contentDetail figure{
+    width:100%;
+    margin:35px 0;
+    display:inline-block;  
+}
+.contentDetail figure:first-child{
+    margin-top:0px;
+}
+.options{
+    position:absolute;
+    top:10px;
+    right:10px;
+    z-index: 10;
+}
+.optionBtn{
+    writing-mode: vertical-rl;
+    color:#fff;
+    font-size:18px;
+    font-family: "GongGothicBold";
+    font-weight:100;
+    cursor: pointer;
+    line-height:0;
+}
+.optionBtn ul{
+    display:none;
+    writing-mode: horizontal-tb;
+    position:absolute;
+    top:35px;
+    right:10px;
+    background: #fff;
+    border-radius:5px;
+    color:#333;
+    font-size:15px;
+    padding:10px;
+    font-family:"GongGothicLight";
+    width:35px;
+    text-align: center;
+}
+.optionBtn ul.optionShow{
+    display:block;
+}
+.optionBtn ul li{
+    padding:5px 0;
+    cursor:pointer;
+    line-height: 1.5;
+}
+.optionBtn ul li:nth-child(2){
+    border-top:1px solid #ccc;
+}
+.optionBtn ul li a{
+    text-decoration:none;
+    color:#333;
+}
+
+/* Web Design Stylessheet */
+.boardViewBox.wdboardViewBox{
+    background:#f5f5f5;
+}
+.boardViewBox.wdboardViewBox .thumbBox .thumbList{
+    width:100%;
+    height:250px;
+    margin-bottom:30px;
+    position:relative;
+    display:inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    border-radius:0px;
+    box-shadow: none;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+}
+.wdboardViewBox .contentDetail{
+    padding:0;
+}
+.boardBigtitle.WebdesignBigtitle{
+    background:none;
+}
+.boardBigtitle.WebdesignBigtitle h1{
+    color:#333;
+}
+.wdboardViewBox .contentDetail figure figcaption{
+    padding:0 70px;
+    box-sizing: border-box;
+    background:#fff;
+}
+.wdboardViewBox .contentDetail figure figcaption ul{
+    width:100%;
+    display: flex;
+    margin-top:30px;
+    justify-content: space-between;
+}
+.wdboardViewBox .contentDetail figure figcaption ul p{
+    background:#fff;
+    padding:0px;
+    width:70%;
+    height:100%;
+    float: right;
+    text-align: left;
+    padding-left:10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+.wdboardViewBox .contentDetail figure figcaption ul > li{
+    width:49%;
+}
+.wdboardViewBox .contentDetail figure figcaption ul > li > ul{
+    width:100%;
+    flex-direction: column;
+}
+.wdboardViewBox .contentDetail figure figcaption ul > li > ul > li{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    background:#f5f5f5;
+    box-sizing: border-box;
+    border:1px solid #f5f5f5;
+    margin:1px;
+    text-align: left;
+    padding-left:10px;
+}
+
+/* 상세페이지 */
+.contentDetail.pdpageDetail{
+    width:100%;
+    box-sizing:border-box;
+    padding:20px 70px 70px 70px;
+    text-align: center;
+}
+.contentDetail.pdpageDetail img{
+    max-width: min-content;
+}
+.contentDetail.pdpageDetail figcaption{
+    margin-top:50px;
+    background:none;
+    border-top:1px solid #ebebeb;
+}
+.productdetailTitle{
+    background:#212121;
+}
+
+/* 제품 촬영 */
+.productshotTitle{
+    background:#212121;
+}
+
+
+/* ===== 모바일 버전 ===== */
+.mobilethumbBox{
+    width:100%;
+    padding:30px 10px;
+}
+.mobilethumbBox .thumbList h2{
+    font-size:15px;
+}
+.boardViewBox .mobilethumbBox .thumbList{
+    height:200px;
+    margin-bottom:15px;
+}
+.landscapeContentBox{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+.boardViewBox .landscapeContentBox .contentThumb{
+    height:auto;
+}
+.boardViewBox .landscapeContentBox .contentDetail{
+    padding:50px 5px;
+
+}
+.boardViewBox .landscapeContentBox .contentDetail h2{
+    padding:0 0 30px 0;
+    font-size:24px;
+}
+.boardViewBox .landscapeContentBox .contentDetail figure{
+    margin:10px 0;
+}
+.boardViewBox .landscapeContentBox .contentDetail figcaption p{
+    padding:10px;
+    font-size:12px;
+    word-break: keep-all;
+}
+.closeContent{
+    position:fixed;
+    width:50px;
+    height:50px;
+    bottom:30px;
+    right:10px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    font-family: "GongGothicLight";
+    color:#fff;
+    font-size:15px;
+    background:#69a745;
+}
+
+/* 제품 촬영 */
+.productshotContentBox{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+.boardViewBox .productshotContentBox .contentThumb{
+    height:auto;
+}
+.boardViewBox .productshotContentBox .contentDetail{
+    padding:50px 5px;
+
+}
+.boardViewBox .productshotContentBox .contentDetail h2{
+    padding:0 0 30px 0;
+    font-size:24px;
+}
+.boardViewBox .productshotContentBox .contentDetail figure{
+    margin:10px 0;
+}
+.boardViewBox .productshotContentBox .contentDetail figcaption p{
+    padding:10px;
+    font-size:12px;
+    word-break: keep-all;
+}
+
+/* 상세페이지 */
+.productdetailContentBox{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+.boardViewBox .productdetailContentBox .contentThumb{
+    height:auto;
+}
+.boardViewBox .productdetailContentBox .contentDetail{
+    padding:30px 0px;
+
+}
+.boardViewBox .productdetailContentBox .contentDetail h2{
+    padding:0 10px 20px 10px;
+    font-size:24px;
+    word-break: keep-all;
+    box-sizing: border-box;
+}
+.boardViewBox .productdetailContentBox .contentDetail figure{
+    margin:10px 0;
+}
+.boardViewBox .productdetailContentBox .contentDetail figcaption p{
+    padding:10px;
+    font-size:12px;
+    word-break: keep-all;
+}
+
+/* 웹디자인 */
+.webdesignContentBox{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+.boardViewBox .webdesignContentBox .contentThumb{
+    height:auto;
+}
+.boardViewBox .webdesignContentBox .contentDetail{
+    padding:0 0 30px 0px;
+
+}
+.boardViewBox .webdesignContentBox .contentDetail h2{
+    padding:0 10px 30px 10px;
+    font-size:24px;
+    word-break: keep-all;
+    box-sizing: border-box;
+}
+.boardViewBox .webdesignContentBox .contentDetail figure{
+    margin:10px 0;
+}
+.boardViewBox .webdesignContentBox .contentDetail figcaption{
+    padding:0 10px;
+}
+.boardViewBox .webdesignContentBox .contentDetail figcaption ul{
+    flex-direction: column;
+}
+.boardViewBox .webdesignContentBox .contentDetail figcaption ul li{
+    width:100%;
+}
+.boardViewBox .webdesignContentBox .contentDetail figcaption ul li p{
+    padding:0 0 0 10px;
+}
+.boardViewBox .webdesignContentBox .contentDetail figcaption p{
+    padding:10px;
+    font-size:12px;
+    word-break: keep-all;
+}

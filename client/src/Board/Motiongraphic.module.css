@@ -1,0 +1,224 @@
+.boardViewBox{
+    width:100%;
+    height:100vh;
+    min-height:820px;
+    box-sizing: border-box;
+    background:#212121;
+}
+.MotionthumbBox{
+    width:100%;
+    height:100%;
+    overflow-y:scroll;
+    box-sizing: border-box;
+    padding:0;
+    padding:55px 30px;
+    position:relative;
+    -ms-overflow-style: none;
+     scrollbar-width: none; 
+}
+.MotionthumbBox::-webkit-scrollbar{display:none}
+
+.MotionthumbBox .thumbList{
+    width:31.33%;
+    height:0px;
+    padding-bottom:18%;
+    position:relative;
+    float: left;
+    cursor: pointer;
+    background:#212121;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px 5px rgba(0,0,0,.5);
+    margin:15px 1%;
+}
+.MotionthumbBox .thumbList .listThumb{
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+.MotionthumbBox .thumbList img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    transform:scale(1.02);
+    transition-duration: 0.5s;
+}
+
+.MotionthumbBox .thumbList:hover img{
+    transform:scale(1);
+}
+
+.motioncontentBox{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    box-sizing:border-box;
+    padding-left:170px;
+    background:rgba(0,0,0,.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    overflow-y: scroll;
+    z-index: 11;
+}
+
+.motioncontentBox::-webkit-scrollbar{width:5px;}
+.motioncontentBox::-webkit-scrollbar-thumb{
+    background-color:#69a745;
+    background-clip:padding-box;
+    border:1px solid transparent;
+}
+.motioncontentBox::-webkit-scrollbar-track{
+    background-color:#333;
+}
+.motioncontentBox img{
+    width:100%;
+    height:auto;
+    vertical-align: top;
+}
+.contentThumb{
+    width:100%;
+    height:600px;
+}
+.contentThumb img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+.contentDetail{
+    width:100%;
+    box-sizing:border-box;
+    padding:70px 25% 105px 25%;
+    text-align: center;
+    position: relative;
+}
+.contentDetail h2{
+    font-weight:100;
+    font-family:"GongGothicLight";
+    color:#69a745;
+    text-align:center;
+    font-size:35px;
+    margin:0px;
+    padding:50px 0;
+}
+.contentDetail p{
+    margin:0px;
+}
+.contentDetail figcaption{
+    font-size:15px;
+    color:#333;
+    font-family:"GongGothicLight";
+    background:#fff;
+    text-align: center;
+    padding:20px 0
+}
+.contentDetail figcaption p{
+    padding:20px 0px;
+}
+.contentDetail figure{
+    width:100%;
+    display:inline-block;  
+    box-sizing: border-box;
+    padding:10px;
+    background:#fff;
+    margin:0px;
+}
+.contentDetail figure:first-child{
+    margin-top:0px;
+}
+.options{
+    position:absolute;
+    top:10px;
+    right:10px;
+    z-index: 10;
+}
+.optionBtn{
+    writing-mode: vertical-rl;
+    color:#fff;
+    font-size:18px;
+    font-family: "GongGothicBold";
+    font-weight:100;
+    cursor: pointer;
+    line-height:0;
+}
+.optionBtn ul{
+    display:none;
+    writing-mode: horizontal-tb;
+    position:absolute;
+    top:35px;
+    right:10px;
+    background: #fff;
+    border-radius:5px;
+    color:#333;
+    font-size:15px;
+    padding:10px;
+    font-family:"GongGothicLight";
+    width:35px;
+    text-align: center;
+}
+.optionBtn ul.optionShow{
+    display:block;
+}
+.optionBtn ul li{
+    padding:5px 0;
+    cursor:pointer;
+    line-height: 1.5;
+}
+.optionBtn ul li:nth-child(2){
+    border-top:1px solid #ccc;
+}
+.optionBtn ul li a{
+    text-decoration:none;
+    color:#333;
+}
+.closeContent{
+    position: absolute;
+    width:70px;
+    height:70px;
+    background:#664498;
+    border-radius:35px;
+    border:none;
+    color:#fff;
+    left:50%;
+    bottom:70px;
+    font-size:30px;
+    translate:-35px 0;
+    transform:rotate(0deg);
+    transition-duration:0.5s;
+    cursor: pointer;
+}
+.closeContent:hover{
+    background:#69a745;
+    transform:rotate(45deg);
+}
+
+/* 모바일 버전 */
+.mobileBoardViewBox .MotionthumbBox{
+    padding:30px 10px;
+}
+.mobileBoardViewBox .MotionthumbBox .thumbList{
+    width:100%;
+    margin:1vw 0;
+    padding-bottom:62%;
+    box-shadow: 0 15px 20px 6px rgba(0,0,0,.3);
+}
+.mobileBoardViewBox .MotionthumbBox .thumbList img{
+    filter: none;
+    opacity: 1;;
+}
+.mobileBoardViewBox .motioncontentBox{
+    padding-left:50px;
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.mobileBoardViewBox .motioncontentBox::-webkit-scrollbar{
+    display:none;
+}
+.mobileBoardViewBox .contentDetail{
+    padding:30px 0;
+}
+.mobileBoardViewBox .closeContent{
+    display:none;
+}

@@ -1,0 +1,236 @@
+.boardViewBox{
+    width:100%;
+    height:100vh;
+    min-height:820px;
+    box-sizing: border-box;
+    background:#212121;
+}
+.iluthumbBox{
+    width:100%;
+    height:100%;
+    overflow-y:scroll;
+    box-sizing: border-box;
+    padding:0;
+    position:relative;
+    -ms-overflow-style: none;
+     scrollbar-width: none; 
+}
+.iluthumbBox::-webkit-scrollbar{display:none}
+
+.iluthumbBox .thumbList{
+    width:20%;
+    height:0px;
+    padding-bottom:20%;
+    margin:0;
+    position:relative;
+    float: left;
+    cursor: pointer;
+    background:#212121;
+    overflow: hidden;
+}
+.iluthumbBox .thumbList .listThumb{
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+.iluthumbBox .thumbList img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    filter: grayscale(0.5);
+    transform:scale(1.02);
+    opacity: 0.6;
+    transition-duration: 0.5s;
+}
+
+.iluthumbBox .thumbList:hover img{
+    filter: grayscale(0);
+    transform:scale(1);
+    opacity: 1;
+}
+
+.ilucontentBox{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    box-sizing:border-box;
+    padding-left:170px;
+    background:rgba(0,0,0,.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    overflow-y: scroll;
+    z-index: 11;
+}
+
+.ilucontentBox::-webkit-scrollbar{width:5px;}
+.ilucontentBox::-webkit-scrollbar-thumb{
+    background-color:#69a745;
+    background-clip:padding-box;
+    border:1px solid transparent;
+}
+.ilucontentBox::-webkit-scrollbar-track{
+    background-color:#333;
+}
+.ilucontentBox img{
+    width:100%;
+    height:auto;
+    vertical-align: top;
+}
+.contentThumb{
+    width:100%;
+    height:600px;
+}
+.contentThumb img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+.contentDetail{
+    width:100%;
+    box-sizing:border-box;
+    padding:70px 25% 105px 25%;
+    text-align: center;
+    position: relative;
+}
+.contentDetail h2{
+    font-weight:100;
+    font-family:"GongGothicLight";
+    color:#69a745;
+    text-align:center;
+    font-size:35px;
+    margin:0px;
+    padding:50px 0;
+}
+.contentDetail p{
+    margin:0px;
+}
+.contentDetail figcaption{
+    font-size:15px;
+    color:#333;
+    font-family:"GongGothicLight";
+    background:#fff;
+    text-align: center;
+    padding:20px 0
+}
+.contentDetail figcaption p{
+    padding:20px 0px;
+}
+.contentDetail figure{
+    width:100%;
+    display:inline-block;  
+    box-sizing: border-box;
+    padding:10px;
+    background:#fff;
+    margin:0px;
+}
+.contentDetail figure:first-child{
+    margin-top:0px;
+}
+.options{
+    position:absolute;
+    top:10px;
+    right:10px;
+    z-index: 10;
+}
+.optionBtn{
+    writing-mode: vertical-rl;
+    color:#fff;
+    font-size:18px;
+    font-family: "GongGothicBold";
+    font-weight:100;
+    cursor: pointer;
+    line-height:0;
+}
+.optionBtn ul{
+    display:none;
+    writing-mode: horizontal-tb;
+    position:absolute;
+    top:35px;
+    right:10px;
+    background: #fff;
+    border-radius:5px;
+    color:#333;
+    font-size:15px;
+    padding:10px;
+    font-family:"GongGothicLight";
+    width:35px;
+    text-align: center;
+}
+.optionBtn ul.optionShow{
+    display:block;
+}
+.optionBtn ul li{
+    padding:5px 0;
+    cursor:pointer;
+    line-height: 1.5;
+}
+.optionBtn ul li:nth-child(2){
+    border-top:1px solid #ccc;
+}
+.optionBtn ul li a{
+    text-decoration:none;
+    color:#333;
+}
+.closeContent{
+    position: absolute;
+    width:70px;
+    height:70px;
+    background:#664498;
+    border-radius:35px;
+    border:none;
+    color:#fff;
+    left:50%;
+    bottom:70px;
+    font-size:30px;
+    translate:-35px 0;
+    transform:rotate(0deg);
+    transition-duration:0.5s;
+    cursor: pointer;
+}
+.closeContent:hover{
+    background:#69a745;
+    transform:rotate(45deg);
+}
+/* 모바일 버전 */
+.mobileiluthumbBox{
+    padding:30px 10px;
+}
+.mobileiluthumbBox .thumbList{
+    width:48%;
+    margin:1vw 1%;
+    padding-bottom: 50%;
+    box-shadow: 0 15px 20px 6px rgba(0,0,0,.3);
+}
+.mobileiluthumbBox .thumbList img{
+    filter:none;
+    opacity: 1;
+}
+.mobileilucontentBox{
+    padding-left:50px;
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.mobileilucontentBox::-webkit-scrollbar{
+    display:none;
+}
+.mobileilucontentBox .contentDetail{
+    padding:30px 0;
+}
+.mobileilucontentBox .contentDetail figure{
+    overflow:scroll;
+    padding:0;
+}
+.mobileilucontentBox .contentDetail figure img{
+    width:auto;
+    max-width: 500px;
+}
+.mobileilucontentBox .contentDetail figcaption{
+    display: none;
+}
+.mobileilucontentBox .closeContent{
+    display:none;
+}

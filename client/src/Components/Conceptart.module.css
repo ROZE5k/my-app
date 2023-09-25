@@ -1,0 +1,107 @@
+.conceptArt{
+    width:100%;
+    height:0px;
+    padding-bottom:56.2%;
+    background:#664498;
+    position:relative;
+}
+.conceptArt ul{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.conceptArt ul li{
+    position:relative;
+    float:left;
+    height:100%;
+    transition-duration:0.5s;
+}
+.conceptArt ul li:first-child{
+    background:no-repeat url(../images/digital_painting.jpg);
+    background-size:cover;
+    background-position:center;
+}
+.conceptArt ul li:nth-child(2){
+    background:no-repeat url(../images/concept_art.jpg);
+    background-size:cover;
+    background-position:center;
+}
+.conceptArt ul li:nth-child(3){
+    background:no-repeat url(../images/drawing.jpg);
+    background-size:cover;
+    background-position:center;
+}
+.conceptArt ul li:last-child{
+    background:no-repeat url(../images/illustration.jpg);
+    background-size:cover;
+    background-position:center;
+}
+.conceptArt ul li.artOpen{
+    width:34%;
+    opacity:1;
+    filter:grayscale(0);
+}
+.conceptArt ul li.artClose{
+    width:22%;
+    opacity:0.5;
+    filter:grayscale(1);
+}
+.conceptArt ul li a{
+    width:100%;
+    padding:20px;
+    position:absolute;
+    bottom:5%;
+    text-align:center;
+    color:#fff;
+    text-decoration: underline;
+    font-family:"GongGothicMedium";
+    font-size:24px;
+    visibility: hidden;
+    opacity: 0;
+    transition-duration:0.5s;
+}
+.conceptArt ul li.artOpen a{
+    visibility: visible;
+    opacity: 1;
+}
+.conceptArt ul li img{
+    width:100%;
+    height:0%;
+    position:absolute;
+    bottom:0px;
+    transition-duration:0.5s;
+}
+.conceptArt ul li.artOpen img{
+    height:30%;
+}
+
+/* 모바일 버전 */
+.mobileConceptArt{
+    width:100%;
+    height:100vh;
+    background:#fff;
+}
+.mobileConceptArt .conceptThumbs{
+    height:6%;
+    box-sizing: border-box;
+    border-top:3px solid #69a745;
+}
+.mobileConceptArt .conceptSwiper{
+    height:94%;
+}
+.mobileConceptArt .conceptSwiper p{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    bottom:5%;
+    margin:0;
+    color:#fff;
+    font-family:"GongGothicMedium";
+    font-size:18px;
+}
+.mobileConceptArt .conceptSwiper p span{
+    font-size:15px;
+    font-family:"GongGothicLight";
+}

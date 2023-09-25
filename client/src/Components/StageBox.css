@@ -1,0 +1,213 @@
+.mobox_wrapper{
+    height: 100%;
+    border:none;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.SsSwiper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transform: scale(1);
+    transition-duration: 3s;
+    filter: grayscale(1);
+    top: 0%;
+}
+.SsSwiper .swiper-slide-active img{
+    filter: grayscale(0);
+}
+.mobox_wrapper.momonster_box h1{
+    position:relative;
+    font-size:40px;
+    color:#fff;
+    font-family:"GongGothicBold";
+    width:100%;
+    height:100%;
+    display:flex;
+    text-align:center;
+    justify-content:center;
+    padding-top:20%;
+    box-sizing:border-box;
+    opacity:0.5;
+    transition-duration:3s;
+}
+
+.mobox_wrapper.momonster_box img.momonster_1{
+    transform:scale(1.02);
+}
+.swiper-slide-active.mobox_wrapper.momonster_box img.momonster_1{
+    transform:scale(1);
+    }
+.swiper-slide-active.mobox_wrapper.momonster_box h1{
+    opacity:1;
+    }
+.swiper-slide-active.mobox_wrapper.momonster_box img.momonster_2{
+    transform:scale(1.03);
+    }
+.swiper-slide-active.mobox_wrapper.momonster_box img.momonster_3{
+    transform:scale(1.05);
+    top:-2%;
+    }
+.swiper-slide-active.mobox_wrapper.momonster_box img.momonster_4{
+    transform:scale(1.08);
+    top:-3.5%;
+    }
+.mobox_wrapper.momonster_box a{
+    position:absolute;
+    font-size:15px;
+    color:#fff;
+    font-family:"GongGothicLight";
+    width:40%;
+    left:30%;
+    display:block;
+    text-align:center;
+    bottom:70px;;
+    padding:10px 0;
+    border:1px solid #fff;
+    background:rgba(0,0,0,.6);
+    transition-duration:3s;
+    box-sizing:border-box;
+    opacity:0;
+    text-decoration: none;
+    }
+.swiper-slide-active.mobox_wrapper.momonster_box a{
+    opacity:1;
+    }
+
+/* The Last Romance */
+
+.mobox_wrapper.moromance_box a{
+    position:absolute;
+    font-size:15px;
+    color:#fff;
+    font-family:"GongGothicLight";
+    width:40%;
+    left:30%;
+    display:block;
+    text-align:center;
+    bottom:70px;;
+    padding:10px 0;
+    border:1px solid #fff;
+    background:rgba(0,0,0,.6);
+    transition-duration:3s;
+    box-sizing:border-box;
+    opacity:0;
+    text-decoration: none;
+    }
+.swiper-slide-active.mobox_wrapper.moromance_box a{
+    opacity:1;
+    }    
+
+.mobox_wrapper.moromance_box img.molr_1{
+    transform:scale(1.03);
+}
+.swiper-slide-active.mobox_wrapper.moromance_box img.molr_1{
+        transform:scale(1);
+    }
+.mobox_wrapper.moromance_box img.molr_2{
+        transform:scale(1);
+} 
+.swiper-slide-active.box_wrapper.moromance_box img.molr_2{
+        transform:scale(1.01);
+} 
+.mobox_wrapper.moromance_box img.molr_3{
+    transform:scale(1);
+} 
+.swiper-slide-active.mobox_wrapper.moromance_box img.molr_3{
+    transform:scale(1.03);
+} 
+.mobox_wrapper.moromance_box img.molr_4{
+    transform:scale(1);
+    top:0%;
+} 
+.swiper-slide-active.mobox_wrapper.moromance_box img.molr_4{
+    transform:scale(1.06);
+    top:1.5%;
+} 
+.mobox_wrapper.moromance_box h1{
+    position:relative;
+    font-size:40px;
+    color:#fff;
+    font-family:"GongGothicBold";
+    width:100%;
+    height:100%;
+    display:flex;
+    text-align:center;
+    justify-content:center;
+    padding-top:110%;
+    box-sizing:border-box;
+    opacity:0.5;
+    transition-duration:3s;
+    }
+.swiper-slide-active.mobox_wrapper.moromance_box h1{
+    opacity:1;
+}
+
+/* The Pirates */
+
+.mobox_wrapper.mopirates_box a{
+    position:absolute;
+    font-size:15px;
+    color:#fff;
+    font-family:"GongGothicLight";
+    width:40%;
+    left:30%;
+    display:block;
+    text-align:center;
+    bottom:70px;;
+    padding:10px 0;
+    border:1px solid #fff;
+    background:rgba(0,0,0,.6);
+    transition-duration:3s;
+    box-sizing:border-box;
+    opacity:0;
+    text-decoration: none;
+    }
+.swiper-slide-active.mobox_wrapper.mopirates_box a{
+    opacity:1;
+    }    
+
+.mobox_wrapper.mopirates_box img.mopirates_1{
+    transform:scale(1.03);
+}
+.swiper-slide-active.mobox_wrapper.mopirates_box img.mopirates_1{
+        transform:scale(1);
+    }
+.mobox_wrapper.mopirates_box img.mopirates_2{
+        transform:scale(1);
+} 
+.swiper-slide-active.mobox_wrapper.mopirates_box img.mopirates_2{
+        transform:scale(1.01);
+} 
+.mobox_wrapper.mopirates_box img.mopirates_3{
+    transform:scale(1);
+} 
+.swiper-slide-active.mobox_wrapper.mopirates_box img.mopirates_3{
+    transform:scale(1.03);
+} 
+.mobox_wrapper.mopirates_box img.mopirates_4{
+    transform:scale(1);
+} 
+.swiper-slide-active.mobox_wrapper.mopirates_box img.mopirates_4{
+    transform:scale(1.15);
+} 
+.mobox_wrapper.mopirates_box h1{
+    position:relative;
+    font-size:40px;
+    color:#fff;
+    font-family:"GongGothicBold";
+    width:100%;
+    height:100%;
+    display:flex;
+    text-align:center;
+    justify-content:center;
+    padding-top:70%;
+    box-sizing:border-box;
+    opacity:0.5;
+    transition-duration:3s;
+}
+.swiper-slide-active.mobox_wrapper.mopirates_box h1{
+    opacity:1;
+}

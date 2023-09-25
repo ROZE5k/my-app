@@ -1,0 +1,257 @@
+.swiper, swiper-container{
+    height:100%;
+}
+.mySwiper{
+    height:80%;
+    width:100%;
+    border-radius:20px;
+    box-shadow: 5px 15px 20px 10px rgba(0,0,0,.6);
+    overflow: hidden;
+}
+.swiper-slide{
+    overflow: hidden;
+}
+.swiper-slide img{
+    width:100%;
+    height:100%;
+    transform: scale(1.2);
+    transition-duration: 2s;
+    object-fit: cover;
+    object-position: center;
+}
+.swiper-slide-active img{
+    transform: scale(1);
+}
+.swiper-slide .bannerInfo{
+    position:absolute;
+    bottom:-100%;
+    left:50px;
+    width:80%;
+    opacity: 0;
+    transition-duration: 2s;
+}
+.swiper-slide-active .bannerInfo{
+    bottom:50px;
+    opacity: 1;
+}
+.swiper-slide .bannerInfo p{
+    color:#fff;
+    font-family:"GongGothicLight";
+    margin:15px 0 0 0;
+    font-size:18px;
+    word-break: keep-all;
+}
+.swiper-slide .bannerInfo button{
+    padding:15px 20px;
+    background:rgba(0,0,0,.1);
+    border:1px solid #fff;
+    color:#fff;
+    font-size:24px;
+    font-family: "GongGothicLight";
+    cursor:pointer;
+}
+.swiper-slide .bannerInfo button:hover{
+    background:#69a745;
+}
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets{
+    width: 60px;
+    height: 100%;
+    border-radius: 0px;
+    background-color: rgba(0,0,0,.2);
+    cursor: pointer;
+    position:absolute;
+    right:0px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-sizing:border-box;
+    border-left:1px solid rgba(0,0,0,.5);
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet{
+   width:100%;
+   height:24.8%;
+   border-radius:0px;
+   margin:0px;
+   transition-duration: 0.5s;
+}
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet-active,
+.swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet-active{
+    background-color:#69a745;
+}
+.swiper-pagination-bullet:first-child{
+    background-image: url('/public/icons/spring_icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+.swiper-pagination-bullet:nth-child(2){
+    background-image: url('/public/icons/summer_icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+.swiper-pagination-bullet:nth-child(3){
+    background-image: url('/public/icons/autumn_icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+.swiper-pagination-bullet:last-child{
+    background-image: url('/public/icons/winter_icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+.snapThumbs{
+    width:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    background:#000;
+    z-index: 0;
+}
+.snapThumbs div{
+    width:100%;
+    height:100vh;
+}
+.snapThumbs div img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.3;
+}
+.mySwiper2{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index: 0;
+    opacity: 0.3;
+}
+.snapBigbanner{
+    width:100%;
+    background:#fff;
+}
+.snapBigbanner img{
+    width:100%;
+    height:auto;
+}
+.snapBigbanner h1{
+    margin:0px;
+    padding:50px 0;
+    border-bottom:1px solid #69a745;
+    text-align: center;
+    color:#69a745;
+    font-family:"GongGothicBold";
+    font-weight:100;
+    font-size:30px;
+}
+.snapBigbanner h1 span{
+    font-family: "GongGothicLight";
+    color:#333;
+    font-size:25px;
+}
+.photoList{
+    width:100%;
+    box-sizing: border-box;
+    padding:70px 120px;
+    background:#fff;
+}
+.photoList img{
+    width:100%;
+    height:auto;
+    vertical-align: top;
+}
+.photoList p{
+    font-family: "GongGothicLight";
+    color:#333;
+    font-size:18px;
+}
+.photoList figure{
+    width:100%;
+    margin:30px 0;
+    display: inline-block;
+    text-align: center;
+}
+.photoList figure.halfImg{
+    width:100%;
+}
+.photoList figure.halfImg figcaption{
+    margin-top:30px;
+}
+.photoList figure.halfImg ul{
+    width:100%;
+    height:22.5vw;
+}
+.photoList figure figcaption{
+    padding:30px 0;
+    background:#f5f5f5;
+    text-align: center;
+}
+.photoList figure:last-child{
+    margin-bottom:0px;
+}
+.photoList figure.columnImg img{
+    width:50%;
+    height:auto;
+}
+.photoList figure.columnImg figcaption{
+    width:50%;
+    margin-left:25%;
+}
+
+/* 모바일 버전 */
+.mobileSnapbanner .swiper-pagination-vertical.swiper-pagination-bullets,
+.mobileSnapbanner .swiper-vertical > .swiper-pagination-bullets{
+    width:50px;
+}
+.mobileSnapbanner .swiper-slide .bannerInfo{
+    width:60%;
+    left:20%;
+    transform:translateX(-25px);
+}
+.mobileSnapbanner .swiper-slide .bannerInfo button{
+    font-size:15px;
+    width:100%;
+}
+.mobileSnapbanner .swiper-slide .bannerInfo  p{
+    text-align:center;
+    font-size:15px;
+}
+.mobileSnapBox .snapBigbanner h1{
+   font-size:18px;
+   padding:30px 0;
+}
+.mobileSnapBox .snapBigbanner h1 span{
+    font-size:15px;
+}
+.mobileSnapBox .photoList{
+    padding:30px 10px;
+}
+.mobileSnapBox .photoList figure figcaption p{
+    padding:0 10px;
+    margin:0;
+    font-size:13px;
+    word-break: keep-all;
+}
+.mobileSnapBox .photoList figure.halfImg ul{
+    height:100vw;
+    flex-wrap: wrap;
+}
+.mobileSnapBox .photoList figure.halfImg ul li{
+    width:100%;
+    height:48%;
+}
+.mobileSnapBox .photoList figure.columnImg img{
+    width:100%;
+}
+.mobileSnapBox .photoList figure.columnImg figcaption{
+    width:100%;
+    margin:0;
+}

@@ -1,0 +1,123 @@
+.PhotoGraphy{
+    width:100%;
+    min-height:100vh;
+    position: relative;
+    background:no-repeat url('../images/p_t_bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    background-position: 0px center;
+    transition:0.3s ease-in-out;
+}
+
+.PhotoGraphy.active{
+    width:100%;
+    min-height:100vh;
+    position: relative;
+    background:no-repeat url('../images/p_t_bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    background-position: 360px center;
+    transition:0.6s ease-in-out;
+}
+
+.PhotoGraphy h1,.PhotoGraphy h2{margin:0px;}
+.PhotoGraphy div{display:inline-block; background:#000; display:flex; justify-content: center; align-items: center; overflow:hidden; float:left;}
+.PhotoGraphy div ul li{border-bottom:1px solid #333; border-left:1px solid #333; box-sizing:border-box;}
+.PhotoGraphy div img.bg_img{width:100%; height:100%; object-fit: cover; transform:scale(1); transition-duration:1.2s; position:absolute; top:0px; left:0px; opacity:0.9; filter: saturate(0.5);}
+.PhotoGraphy div .p_icon{position:absolute; top:0px; background:none; left:0px; display:flex; flex-direction: column; color:#fff; justify-content: center; text-align:center; align-items: center; width:100%; height:100%;}
+.PhotoGraphy div .p_icon h2{font-size:35px; font-family:"GongGothicBold";}
+.PhotoGraphy div .p_icon p{font-size:20px; font-family:"GongGothicLight";}
+.PhotoGraphy div:hover img.bg_img{transform:scale(1.05); filter: saturate(1); opacity:1;}
+.PhotoGraphy div a{position:absolute; width:100%; height:100%; top:0px; left:0px; display:block;}
+.PhotoGraphy .photography_title{width:100%; height:0px; padding-top:24%; border-bottom:1px solid #333; border-left:1px solid #333; position:relative; background:none; box-sizing:border-box;}
+.PhotoGraphy .photography_title h1{color:#fff; display:flex; justify-content: center; align-items: center; width:100%; height:100%; position:absolute; top:0; left:0px; font-size:50px; font-family:"GongGothicBold";}
+.PhotoGraphy .photography_title h1 span{font-weight:normal; padding:0px 20px; font-family:'GongGothicLight';}
+.PhotoGraphy .landscape_photography{width:60%; height:0px; padding-top:38%; position:relative;}
+.PhotoGraphy .landscape_photography .box_line{width:100%; height:100%; position:absolute; top:0px; left:0px;}
+.PhotoGraphy .landscape_photography .box_line li{width:33.33%; height:50%; float:left;}
+.PhotoGraphy .story_photography{width:40%; height:0px; padding-top:38%; position:relative;}
+.PhotoGraphy .story_photography .box_line{width:100%; height:100%; position:absolute; top:0px; left:0px;}
+.PhotoGraphy .story_photography .box_line li{width:50%; height:50%; float:left;}
+.PhotoGraphy .product_photography{width:40%; height:0px; padding-top:38%; position:relative;}
+.PhotoGraphy .product_photography .box_line{width:100%; height:100%; position:absolute; top:0px; left:0px;}
+.PhotoGraphy .product_photography .box_line li{width:50%; height:50%; float:left;}
+.PhotoGraphy .special_photography{width:40%; height:0px; padding-top:38%; position:relative;}
+.PhotoGraphy .special_photography .box_line{width:100%; height:100%; position:absolute; top:0px; left:0px;}
+.PhotoGraphy .special_photography .box_line li{width:50%; height:50%; float:left;}
+.PhotoGraphy .behind_story{width:20%; height:0px; padding-top:38%; position:relative;}
+.PhotoGraphy .behind_story .box_line{width:100%; height:100%; position:absolute; top:0px; left:0px;}
+.PhotoGraphy .behind_story .box_line li{width:100%; height:50%; float:left;}
+
+/* 모바일 버전 */
+.mobilePhotoGraphy{
+    background:none;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.mobilePhotoGraphy .box_line li{
+    border-left:1px solid #212121;
+    border-bottom:1px solid #212121;
+}
+.mobilePhotoGraphy div .p_icon {
+    box-sizing: border-box;
+    padding:0 30px;
+}
+.mobilePhotoGraphy div .p_icon h2{
+    font-size:24px;
+}
+.mobilePhotoGraphy div .p_icon p{
+    font-size:18px;
+    margin:5px;
+}
+.mobilePhotoGraphy .landscape_photography{
+    width:100%;
+    padding-top:100%;
+}
+.mobilePhotoGraphy .landscape_photography .box_line li{
+    height:33.33%;
+}
+.mobilePhotoGraphy .story_photography{
+    width:100%;
+    padding-top: 70%;
+}
+.mobilePhotoGraphy .story_photography .box_line li{
+    width:33.33%;
+}
+.mobilePhotoGraphy .photography_title{
+    border-left:1px solid #212121;
+    border-bottom:1px solid #212121;
+    background:#212121;
+    padding-top:38%;
+}
+.mobilePhotoGraphy .photography_title h1{
+    font-size:24px;
+}
+.mobilePhotoGraphy .photography_title h1 span{
+    padding:0 10px;
+}
+.mobilePhotoGraphy .product_photography{
+    width:100%;
+    padding-top:70%;
+}
+.mobilePhotoGraphy .product_photography .box_line li{
+    width:33.33%;
+
+}
+.mobilePhotoGraphy .special_photography{
+    width:100%;
+    padding-top:70%;
+}
+.mobilePhotoGraphy .special_photography .box_line li{
+    width:33.33%;
+}
+.mobilePhotoGraphy .behind_story{
+    width:100%;
+}
+.mobilePhotoGraphy .behind_story .box_line li{
+    width:33.33%;
+    height:100%;
+}

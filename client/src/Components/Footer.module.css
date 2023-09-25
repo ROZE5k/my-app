@@ -1,0 +1,49 @@
+.Footer{
+    width:100%;
+    background:#212121;
+    padding:70px 50px;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright{
+    color:#fff;
+    margin:0;
+    border-top:1px solid #333;
+    padding-top:20px;
+}
+.snssection{
+    height:50px;
+    margin-bottom:30px;
+}
+.snssection img{
+    width:50px;
+    height:50px;
+    margin:0 10px;
+    filter:grayscale(1);
+    transition-duration:0.5s;
+}
+.snssection img:hover{
+    filter:grayscale(0);
+}
+.rozefooterlogo{
+    margin-bottom:30px;
+}
+
+/* 모바일 버전 */
+.mobileFooter{
+    padding:50px 30px 30px 30px;
+}
+.mobileFooter .rozefooterlogo{
+    width:20%;
+}
+.mobileFooter .snssection img{
+    width:40px;
+    height:40px;
+    filter:grayscale(0);
+}
+.mobileFooter .copyright{
+    font-size:13px;
+}

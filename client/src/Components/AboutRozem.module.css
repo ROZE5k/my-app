@@ -1,0 +1,136 @@
+.AboutRozem{
+    width:100%;
+    height:100vh;
+    overflow-y: scroll;
+    position: relative;
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+.AboutRozem::-webkit-scrollbar{
+    display: none;
+}
+.AboutRozem .roadBox{
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+}
+.AboutRozem .littletravel{
+    position: relative;
+    width:100%;
+    height:100vh;
+    color:#fff;
+    box-sizing: border-box;
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.AboutRozem .littletravel h1{
+    font-family: "GongGothicLight";
+    font-weight: 100;
+    font-size:20px;
+    margin:0;
+    padding:10px 30px;
+    background:#69a745;
+}
+.AboutRozem .littletravel h2{
+    font-family: "GongGothicBold";
+    font-size:40px;
+    font-weight: 100;
+    margin:70px 0 0 0;
+    padding:0 30px;
+    border-left:5px solid #fff;
+    box-sizing: border-box;
+}
+.AboutRozem .littletravel .scrollIcon{
+    width:80px;
+    height:60vh;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: flex-end;
+}
+.AboutRozem .littletravel .scrollIcon img.scrollImg{
+    width:80px;
+    animation-duration: 3s;
+    animation-name: scrollani;
+    animation-iteration-count: infinite;
+}
+@keyframes scrollani {
+   0%{
+    transform:scale(1);
+   }
+   50% {
+    transform:scale(1.1);
+    }
+  }
+
+.AboutRozem .travelContent {
+    position: relative;
+    width:100%;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:30px 30px 50vh 30px;
+    background:rgba(0,0,0,.3);
+}
+.AboutRozem .travelContent p.sectionInfo{
+    font-family: "GongGothicLight";
+    font-size:13px;
+    font-weight: 100;
+    margin:50px 0 0 0;
+    padding:0 30px;
+    box-sizing: border-box;
+    word-break: keep-all;
+    color:#fff;
+}
+.AboutRozem .travelContent .Contentmap{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:100vh;
+}
+.AboutRozem .travelContent .Contentmap h1{
+    color:#fff;
+    font-family:"GongGothicLight";
+    font-weight:100;
+    font-size:24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0px;
+    padding:10px;
+    width:90%;
+    box-sizing: border-box;
+    background:#69a745;
+}
+.AboutRozem .travelContent .Contentmap h1 img{
+    width:30px;
+}
+.AboutRozem .travelContent .Contentmap p{
+    color:#fff;
+    margin:0px;
+    font-family: "GongGothicLight";
+    font-size:13px;
+    word-break: keep-all;
+    padding:50px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.AboutRozem .travelContent .Contentmap img{
+    width:70%;
+}
+.AboutRozem .travelContent .Contentmap a{
+    text-decoration: none;
+    color:#fff;
+    padding:10px;
+    border:1px solid #fff;
+    background:rgba(0,0,0,.3);
+    margin-top:20px;
+    font-size:13px;
+    font-family:"GongGothicLight";
+}

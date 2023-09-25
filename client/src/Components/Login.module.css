@@ -1,0 +1,224 @@
+.Login{
+    width:100%;
+    height:100vh;
+    min-height:820px;
+    box-sizing:border-box;
+    padding:70px 50px;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background:no-repeat url('../images/Login_bg.jpg');
+    background-size:cover;
+    background-position: 0 center;
+    background-attachment: fixed;
+    transition:0.3s ease-in-out;
+}
+.Login.active{
+    background-position: 360px center;
+    transition:0.6s ease-in-out;
+}
+.Login .LoginInputs{
+    min-width:560px;
+    padding:50px;
+    box-sizing: border-box;
+    background:rgba(18, 36, 65, 0);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+}
+.Login .LoginInputs h1{
+    font-family:"GongGothicLight";
+    padding:0;
+    color:#fff;
+    font-size:1.5vw;
+    display:block;
+    width:100%;
+    box-sizing: border-box;
+    margin:0px;
+    text-align: center;
+    margin-bottom:40px;
+    display:inline-flex;
+    justify-content: space-between;
+    position: relative;
+    font-weight: 100;
+}
+.Login .LoginInputs h1 p{
+    margin:0;
+    width:50%;
+    padding:0 0 30px 0;
+    cursor: pointer;
+}
+.Login .LoginInputs h1 p:first-child{
+    text-align: left;
+}
+.Login .LoginInputs h1 p:last-child{
+    text-align: right;
+}
+
+.left{
+    width:50%;
+    height:2px;
+    background:#69a745;
+    position:absolute;
+    bottom:0%;
+    left:0%;
+    transition-duration:0.5s;
+}
+.right{
+    background:#664498;
+    left:50%;
+}
+
+.Login .LoginInputs .rozesUsers{
+    width:100%;
+    display:flex;
+    height:50px;
+    margin-top:30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.Login .LoginInputs .rozesUsers p{
+    margin:0;
+    padding:0;
+    color:#fff;
+    font-size:1vw;
+    font-family:"GongGothicLight";
+    width:20%;
+}
+.Login .LoginInputs .rozesUsers input{
+    width:80%;
+    height:40px;
+    border:none;
+    background:none;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    color:#fff;
+    font-size:1vw;
+    box-sizing: border-box;
+    padding-left:20px;
+    font-family:"GongGothicLight";
+}
+.Login .LoginInputs .rozesUsers input::placeholder{
+    color:rgba(255,255,255,.5);
+    font-size:1vw;
+}
+.Login .LoginInputs button{
+    width:100%;
+    height:60px;
+    border:none;
+    background:#69a745;
+    color:#fff;
+    font-size:1vw;
+    font-family:"GongGothicLight";
+    cursor: pointer;
+}
+.Login .LoginInputs button:first-child{
+    margin-top:70px;
+}
+.Login .LoginInputs button:last-child{
+    background:#212121;
+    margin-top:30px;
+}
+.Login .LoginInputs button.loginNow{
+    background:#69a745;
+}
+.Login .LoginInputs .joinButton button{
+    width:100%;
+    height:60px;
+    border:none;
+    background:#664498;
+    color:#fff;
+    font-size:1vw;
+    font-family:"GongGothicLight";
+    cursor: pointer;
+    margin-top:70px;
+}
+.onLogin{
+    font-family:"GongGothicLight";
+    font-weight:"100";
+}
+.onLogin span{
+    color:#fff;
+}
+.userId{
+    color:yellow;
+    font-size:25px;
+    margin:0;
+}
+.userId span{
+    color:#fff;
+    font-size:18px;
+}
+.managementBox{
+    width:100%;
+}
+.managementBox p{
+    margin:0px;
+    padding:30px 0 20px 0;
+    color:yellow;
+    font-size:15px;
+    font-family:"GongGothicLight";
+}
+.managementBox a{
+    display:block;
+    color:#fff;
+    height:60px;
+    background:#664498;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    font-size:1vw;
+    font-family:"GongGothicLight";
+    
+}
+
+/* 모바일 로그인 */
+.mobileLogin{
+    width:100%;
+    height:100vh;
+    min-height: auto;
+    box-sizing:border-box;
+    padding:30px 20px;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background:no-repeat url('../images/Login_bg.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+.mobileInputs{
+    min-width:unset !important;
+    padding:20px !important;
+    width:100%;
+    box-sizing: border-box;
+    background:rgba(18, 36, 65, 0);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+}
+.mobileLogin .userId{
+    color:yellow;
+    font-size:18px;
+    margin:0;
+}
+.mobileLogin .userId span{
+    font-size:15px;
+}
+.mobileLogin .LoginInputs h1{
+    font-size:15px;
+}
+.mobileLogin .onLogin span{
+    font-size:13px;
+}
+.mobileLogin .LoginInputs .joinButton button{
+    width:100%;
+    height:50px;
+    font-size:13px;
+}
+.mobileLogin .LoginInputs button{
+    width:100%;
+    height:50px;
+    font-size:13px;
+}

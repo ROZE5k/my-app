@@ -1,0 +1,414 @@
+.Navibar{
+    width:170px;
+    height:100%;
+    min-height:820px;
+    background:#212121;
+    box-sizing:border-box;
+    padding:70px 0 70px 50px;
+    position:fixed;
+    z-index: 100;
+    transition:0.3s ease-in-out;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.NavibarActive{
+    width:540px;
+    height:100%;
+    background:#664498;
+    box-sizing:border-box;
+    padding:70px 0 70px 50px;
+    position:fixed;
+    z-index: 100;
+    transition:0.3s ease-in-out;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Logo{
+    list-style: none;
+    width:70px;
+    height:260px;
+    margin:0;
+    padding:0;
+    display:inline-block;
+}
+.Logo li{
+    height:65px;
+    position:relative;
+    opacity:1;
+    top:0px;
+    transition:0.3s ease-in-out;
+}
+.Logoactive{
+    list-style: none;
+    width:70px;
+    height:260px;
+    margin:0;
+    padding:0;
+    display:inline-block;
+}
+.Logoactive li:first-child{
+    height:65px;
+    position:relative;
+    opacity:0;
+    transition:0.2s ease-in-out;
+}
+.Logoactive li:nth-child(2){
+    height:65px;
+    position:relative;
+    opacity:0;
+    top:-65px;
+    transition:0.3s ease-in-out;
+
+}
+.Logoactive li:nth-child(3){
+    height:65px;
+    position:relative;
+    opacity:0;
+    top:-130px;
+    transition:0.4s ease-in-out;
+
+}
+.Logoactive li:nth-child(4){
+    height:65px;
+    position:relative;
+    opacity:0;
+    top:-195px;
+    transition:0.5s ease-in-out;
+
+}
+.iconFadein{
+    position:absolute;
+    top:70px;
+    left:50px;
+    opacity:1;
+    transition:1s ease-in-out;
+    transition-delay: 0.3s;
+}
+.iconFadeout{
+    position:absolute;
+    top:70px;
+    left:50px;
+    opacity:0;
+    transition:0.2s ease-in-out;
+}
+.lineOff{
+    width:0px;
+    height:1px;
+    position:absolute;
+    top:105px;
+    left:125px;
+    background:#fff;
+    transition:0.2s ease-in-out;
+}
+.lineOn{
+    width:100px;
+    height:1px;
+    position:absolute;
+    top:105px;
+    left:125px;
+    background:#fff;
+    transition:0.3s ease-in-out;
+    transition-delay: 0.5s;
+}
+.iconRoll{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:70px;
+    left:230px;
+    opacity:1;
+    transform:rotate(360deg);
+    transition:0.5s ease-in-out;
+    transition-delay: 0.5s;
+}
+.iconRoll:hover img{
+    transform: scale(0.8);
+    transition:0.3s ease-in-out;
+}
+.iconOut{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:70px;
+    left:125px;
+    opacity:0;
+    transform:rotate(0deg);
+    transition:0.3s ease-in-out;
+}
+.cateGory{
+    width:100%;
+    height:260px;
+    color:#fff;
+    font-family: "GongGothicLight";
+    font-size:24px;
+}
+.cateGory a{
+    color:#fff;
+    text-decoration:none;
+}
+.cateGory li{
+    width:100%;
+    height:50px;
+    position:relative;
+    cursor: pointer;
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    box-sizing:border-box;
+    padding-left:20px;
+    border-radius:25px 0 0 25px;
+}
+.cateGory li img{
+    filter:grayscale(1);
+}
+.cateGory li:hover{
+    background:#212121;
+}
+.cateGory li:hover img{
+    filter:grayscale(0);
+}
+.cateGory li:nth-child(4):hover{
+    background:none;
+    cursor:inherit;
+}
+.cateGory > li > div > ul > li{
+    padding-left:0px;
+}
+.cateGory > li > div > ul > li > ul{
+    position:absolute;
+    bottom:0px;
+    left:280px;
+    display:none;
+}
+.cateGory > li > div > ul > li:hover > ul{
+    display:block;
+}
+.cateGory > li > div > ul > li > ul > li{
+    background:#212121;
+    border-radius: 0px;
+    font-size:18px;
+    padding:0 35px;
+    height:65px;
+    width:200px;
+    box-sizing: border-box;
+    position: static;
+}
+.cateGory > li > div > ul > li > ul > li > ul{
+    position:absolute;
+    left:200px;
+    bottom:0px;
+    display:none;
+    height:325px;
+    overflow-y:scroll;
+    width:280px;
+}
+.cateGory > li > div > ul > li > ul > li > ul::-webkit-scrollbar{width:20px;}
+.cateGory > li > div > ul > li > ul > li > ul::-webkit-scrollbar-thumb{
+    background-color:#664498;
+    background-clip:padding-box;
+    border:4px solid transparent;
+    border-radius:20px 0 0 20px;
+}
+.cateGory > li > div > ul > li > ul > li > ul::-webkit-scrollbar-track{
+    background-color:#212121;
+}
+.cateGory > li > div > ul > li > ul > li > ul > li{
+    display: block;
+    height:65px;
+    line-height: 65px;
+    background:#333;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+.cateGory > li > div > ul > li > ul > li > ul > li:nth-child(4):hover{
+    background:#212121;
+}
+.cateGory > li > div > ul > li > ul > li:hover > ul{
+    display: block
+}
+.cateGory > li > div > ul > li > ul > li:nth-child(4):hover{
+    background:#212121;
+}
+.cateOpen{
+    overflow:unset;
+    word-break: keep-all;
+    white-space:nowrap;
+    float:right;
+    width:300px;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+.cateClose{
+    overflow:hidden;
+    word-break: keep-all;
+    white-space:nowrap;
+    float:right;
+    width:0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.setMargin{
+    margin-right:125px;
+    transition:0.5s ease-in-out;
+}
+.unsetMargin{
+    margin-right:50px;
+    transition:0.2s ease-in-out;
+}
+.chatMail{
+    width:70px;
+    height:160px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 모바일 메뉴바 */
+
+.mobileNavibar{
+    width:50px;
+    height:100%;
+    background:#212121;
+    box-sizing:border-box;
+    padding:30px 10px;
+    position:fixed;
+    z-index: 100;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mobileLogo{
+    list-style: none;
+    width:30px;
+    height:120px;
+    margin:0;
+    padding:0;
+    display:inline-block;
+}
+.mobileLogo li{
+    height:30px;
+    position:relative;
+    opacity:1;
+}
+.mobileLogo li img{
+    width:30px;
+    height:auto;
+}
+.mobileMenu li a{
+    color:#fff;
+    text-decoration: none;
+    font-family:"GongGothicLight";
+    font-size:13px;
+    writing-mode: vertical-lr;
+}
+.mobileMenu li{
+    width:30px;
+    display:flex;
+    justify-content: space-around;
+    padding:8px 0;
+}
+.mobilechatMail{
+    width:30px;
+    height:80px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mobilechatMail img{
+    width:30px;
+    height:30px;
+}
+.mobileCategory{
+    width:20px;
+    height:45px;
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mobileCategory div{
+    width:15px;
+    height: 1px;
+    background: #fff;
+    transition-duration: 0.5s;
+    position:absolute;
+}
+.mobileCategory.mobileCategory div:first-child{
+    transform:rotate(0deg);
+    top:15px
+}
+.mobileCategory.mobileCategory div:last-child{
+    transform:rotate(0deg);
+    bottom:15px;
+}
+.mobileCategory.mobileCategoryOpened div:first-child{
+    transform:rotate(45deg);
+    top:22px;
+}
+.mobileCategory.mobileCategoryOpened div:nth-child(2){
+    width: 0px;
+}
+.mobileCategory.mobileCategoryOpened div:last-child{
+    transform:rotate(-45deg);
+    bottom:22px;
+}
+.openedCate{
+    width:100%;
+    height:100vh;
+    position: fixed;
+    background: #fff;
+    top:0;
+    left:100%;
+    transition-duration: 0.5s;
+    box-sizing:border-box;
+    padding:30px 80px 30px 30px;
+    overflow-y:scroll;
+}
+.openedCatetrue{
+    left:50px;
+}
+.openedCate h1{
+    font-family:"GongGothicMedium";
+    font-weight:100;
+    font-size:24px;
+    margin:0;
+    padding-bottom:20px;
+    border-bottom:1px solid #664498;
+    color:#333;
+}
+.openedCate a{
+    text-decoration: none;
+    color:#333;
+}
+.openedCate > ul > li > a{
+    font-family: "GongGothicMedium";
+    font-size:18px;
+    padding-top:20px;
+    display: block;
+    color:#664498;
+}
+.openedCate > ul > li > ul{
+    padding:15px 10px;
+}
+.openedCate > ul > li > ul > li > a{
+    font-size:15px;
+    font-family: "GongGothicLight";
+    color:#666;
+    display: block;
+    padding:5px 0;
+}
